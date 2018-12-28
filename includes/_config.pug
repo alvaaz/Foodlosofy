@@ -1,0 +1,4527 @@
+-pageTitle = "Inicio"
+
+-
+    const platosCalientes = [
+        {
+            title: "Albondigas italianas",
+            ingredients: "Pasta, albondigas (cerdo, vacuno, pan, leche, perejil), salsa de tomate, cebolla, albahaca, queso parmesano, ajo, azucar, pimienta, clavo de olor y sal",
+            porcion: "430g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 120,
+                porcion: 520
+            },
+            proteinas: {
+                cien: 7,
+                porcion: 32
+            },
+            grasasTotales: {
+                cien: 2.8,
+                porcion: 12
+            },
+            grasasSaturadas: {
+                cien: 1.1,
+                porcion: 4.7
+            },
+            grasasMono: {
+                cien: 1.1,
+                porcion: 4.5
+            },
+            grasasPoli: {
+                cien: 0.3,
+                porcion: 1.1
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0.1
+            },
+            colesterol: {
+                cien: 15,
+                porcion: 65
+            },
+            cho: {
+                cien: 17,
+                porcion: 73
+            },
+            azucar: {
+                cien: 2,
+                porcion: 10
+            },
+            sodio: {
+                cien: 70,
+                porcion: 290
+            }
+        },
+        {
+            title: "PLA pollo al limón",
+            ingredients: "Papa, pollo, crema, jugo de limón, aceite de oliva, cebolla, maicena, ajo, pimentón rojo, nuez moscada, pimienta y sal",
+            porcion: "320g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 220,
+                porcion: 700
+            },
+            proteinas: {
+                cien: 12,
+                porcion: 38
+            },
+            grasasTotales: {
+                cien: 13,
+                porcion: 43
+            },
+            grasasSaturadas: {
+                cien: 6.6,
+                porcion: 21.4
+            },
+            grasasMono: {
+                cien: 5.8,
+                porcion: 18.7
+            },
+            grasasPoli: {
+                cien: 0.8,
+                porcion: 2.6
+            },
+            acidos: {
+                cien: 0.4,
+                porcion: 1.2
+            },
+            colesterol: {
+                cien: 60,
+                porcion: 195
+            },
+            cho: {
+                cien: 12,
+                porcion: 38
+            },
+            azucar: {
+                cien: 2,
+                porcion: 5
+            },
+            sodio: {
+                cien: 55,
+                porcion: 170
+            }
+        },
+        {
+            title: "PLA ají de gallina",
+            ingredients: "Arroz, pollo, papa, huevo, ají amarillo, aceituna, leche, pan, crema de leche, aceite de maravilla, queso parmesano, mantequilla y sal",
+            porcion: "370g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 230,
+                porcion: 850
+            },
+            proteinas: {
+                cien: 11,
+                porcion: 43
+            },
+            grasasTotales: {
+                cien: 11,
+                porcion: 41
+            },
+            grasasSaturadas: {
+                cien: 2.8,
+                porcion: 10.9
+            },
+            grasasMono: {
+                cien: 3.5,
+                porcion: 13.8
+            },
+            grasasPoli: {
+                cien: 3.4,
+                porcion: 13.4
+            },
+            acidos: {
+                cien: 0.1,
+                porcion: 0.5
+            },
+            colesterol: {
+                cien: 55,
+                porcion: 215
+            },
+            cho: {
+                cien: 21,
+                porcion: 78
+            },
+            azucar: {
+                cien: 1,
+                porcion: 4
+            },
+            sodio: {
+                cien: 80,
+                porcion: 300
+            }
+        },
+        {
+            title: "PLA fetuccini alfredo",
+            ingredients: "Pasta petuccini, salsa alfredo, crema lactea, jamón acaramelado, aceite de oliva, laurel, perejil, queso parmesano",
+            porcion: "330g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 220,
+                porcion: 740
+            },
+            proteinas: {
+                cien: 6,
+                porcion: 20
+            },
+            grasasTotales: {
+                cien: 11,
+                porcion: 37
+            },
+            grasasSaturadas: {
+                cien: 7,
+                porcion: 23
+            },
+            grasasMono: {
+                cien: 2.8,
+                porcion: 9.4
+            },
+            grasasPoli: {
+                cien: 0.3,
+                porcion: 0.9
+            },
+            acidos: {
+                cien: 0.5,
+                porcion: 1.5
+            },
+            colesterol: {
+                cien: 35,
+                porcion: 120
+            },
+            cho: {
+                cien: 25,
+                porcion: 80
+            },
+            azucar: {
+                cien: 1,
+                porcion: 4
+            },
+            sodio: {
+                cien: 45,
+                porcion: 150
+            }
+        },
+        {
+            title: "PLA pollo al curry",
+            ingredients: "Arroz, pollo, fideos, pimenton rojo, zanahoria, cebolla, zapallo italiano, aceite maravilla, mantequilla, curry en polvo, cilantro, pimienta, maicena, ajo y sal.",
+            porcion: "330g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 190,
+                porcion: 630
+            },
+            proteinas: {
+                cien: 11,
+                porcion: 36
+            },
+            grasasTotales: {
+                cien: 6,
+                porcion: 20
+            },
+            grasasSaturadas: {
+                cien: 1.3,
+                porcion: 4.4
+            },
+            grasasMono: {
+                cien: 2.1,
+                porcion: 6.9
+            },
+            grasasPoli: {
+                cien: 2.2,
+                porcion: 7.3
+            },
+            acidos: {
+                cien: 0.1,
+                porcion: 0.2
+            },
+            colesterol: {
+                cien: 30,
+                porcion: 100
+            },
+            cho: {
+                cien: 23,
+                porcion: 75
+            },
+            azucar: {
+                cien: 1,
+                porcion: 5
+            },
+            sodio: {
+                cien: 35,
+                porcion: 115
+            }
+        },
+        {
+            title: "PLA panqueque verduras",
+            ingredients: "Panqueque espinaca (leche, harina, huevo, espinaca, mantequilla, sal), salsa bechamel (leche, harina, mantequilla), salsa pomodoro, zanahoria, berenjena, zapallo italiano, tomate,  cebolla, champiñon, pimenton y queso parmesano.",
+            porcion: "380g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 120,
+                porcion: 450
+            },
+            proteinas: {
+                cien: 3,
+                porcion: 11
+            },
+            grasasTotales: {
+                cien: 6,
+                porcion: 22
+            },
+            grasasSaturadas: {
+                cien: 3.2,
+                porcion: 12.4
+            },
+            grasasMono: {
+                cien: 1.5,
+                porcion: 5.7
+            },
+            grasasPoli: {
+                cien: 0.5,
+                porcion: 2
+            },
+            acidos: {
+                cien: 0.1,
+                porcion: 0.5
+            },
+            colesterol: {
+                cien: 30,
+                porcion: 115
+            },
+            cho: {
+                cien: 13,
+                porcion: 49
+            },
+            azucar: {
+                cien: 4,
+                porcion: 17
+            },
+            sodio: {
+                cien: 60,
+                porcion: 230
+            }
+        },
+        {
+            title: "PLA pollo teriyaki",
+            ingredients: "Arroz, pollo, salsa teriyaki, aceite maravilla, cebollin, semillas de sesamo, mantequilla, ajo y sal.",
+            porcion: "330g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 170,
+                porcion: 570
+            },
+            proteinas: {
+                cien: 12,
+                porcion: 40
+            },
+            grasasTotales: {
+                cien: 3.4,
+                porcion: 12.1
+            },
+            grasasSaturadas: {
+                cien: 1.1,
+                porcion: 3.7
+            },
+            grasasMono: {
+                cien: 1.3,
+                porcion: 4.3
+            },
+            grasasPoli: {
+                cien: 0.9,
+                porcion: 2.8
+            },
+            acidos: {
+                cien: 0.1,
+                porcion: 0.2
+            },
+            colesterol: {
+                cien: 35,
+                porcion: 115
+            },
+            cho: {
+                cien: 23,
+                porcion: 76
+            },
+            azucar: {
+                cien: 4,
+                porcion: 14
+            },
+            sodio: {
+                cien: 50,
+                porcion: 170
+            }
+        },
+        {
+            title: "PLA lasaña vegetariana",
+            ingredients: "Zapallo italiano, berenjena, tomate, leche, pasta, queso mozzarella, harina, espinaca y champiñon.",
+            porcion: "400g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 90,
+                porcion: 360
+            },
+            proteinas: {
+                cien: 4,
+                porcion: 16
+            },
+            grasasTotales: {
+                cien: 3,
+                porcion: 13
+            },
+            grasasSaturadas: {
+                cien: 1.6,
+                porcion: 6.6
+            },
+            grasasMono: {
+                cien: 0.7,
+                porcion: 2.9
+            },
+            grasasPoli: {
+                cien: 0.3,
+                porcion: 1.2
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0.1
+            },
+            colesterol: {
+                cien: 10,
+                porcion: 30
+            },
+            cho: {
+                cien: 11,
+                porcion: 43
+            },
+            azucar: {
+                cien: 3,
+                porcion: 10
+            },
+            sodio: {
+                cien: 75,
+                porcion: 290
+            }
+        },
+        {
+            title: "PLA pasta italiana",
+            ingredients: "Pollo, pasta, espinaca, leche descremada, crema, tomate seco, salsa tomate, queso parmesano, ajo, aceite oliva, paprika y sal.",
+            porcion: "350g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 160,
+                porcion: 560
+            },
+            proteinas: {
+                cien: 13,
+                porcion: 46
+            },
+            grasasTotales: {
+                cien: 8,
+                porcion: 26
+            },
+            grasasSaturadas: {
+                cien: 2.4,
+                porcion: 8.4
+            },
+            grasasMono: {
+                cien: 2.8,
+                porcion: 9.8
+            },
+            grasasPoli: {
+                cien: 2,
+                porcion: 6.8
+            },
+            acidos: {
+                cien: 0.1,
+                porcion: 0.4
+            },
+            colesterol: {
+                cien: 35,
+                porcion: 125
+            },
+            cho: {
+                cien: 11,
+                porcion: 38
+            },
+            azucar: {
+                cien: 1,
+                porcion: 5
+            },
+            sodio: {
+                cien: 180,
+                porcion: 630
+            }
+        },
+        {
+            title: "PLA risotto aji de gallina",
+            ingredients: "Arroz, pollo, crema, aji amarillo, aceite, caldo pollo, tomate, queso parmesano y espinaca.",
+            porcion: "370g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 190,
+                porcion: 690
+            },
+            proteinas: {
+                cien: 6,
+                porcion: 24
+            },
+            grasasTotales: {
+                cien: 10,
+                porcion: 38
+            },
+            grasasSaturadas: {
+                cien: 3.3,
+                porcion: 12.1
+            },
+            grasasMono: {
+                cien: 3.2,
+                porcion: 12
+            },
+            grasasPoli: {
+                cien: 3.3,
+                porcion: 12.1
+            },
+            acidos: {
+                cien: 0.2,
+                porcion: 0.6
+            },
+            colesterol: {
+                cien: 25,
+                porcion: 85
+            },
+            cho: {
+                cien: 17,
+                porcion: 63
+            },
+            azucar: {
+                cien: 1,
+                porcion: 2
+            },
+            sodio: {
+                cien: 40,
+                porcion: 140
+            }
+        },
+        {
+            title: "PLA asado aleman",
+            ingredients: "Carne molida, zapallo, papa, zanahoria, huevo, cebollin, espinaca, pan, arroz, leche, ajo, mantequilla y apio.",
+            porcion: "420g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 150,
+                porcion: 610
+            },
+            proteinas: {
+                cien: 6,
+                porcion: 27
+            },
+            grasasTotales: {
+                cien: 5,
+                porcion: 21
+            },
+            grasasSaturadas: {
+                cien: 2.2,
+                porcion: 9.2
+            },
+            grasasMono: {
+                cien: 1.9,
+                porcion: 7.8
+            },
+            grasasPoli: {
+                cien: 0.3,
+                porcion: 1.4
+            },
+            acidos: {
+                cien: 0.2,
+                porcion: 0.8
+            },
+            colesterol: {
+                cien: 35,
+                porcion: 155
+            },
+            cho: {
+                cien: 19,
+                porcion: 78
+            },
+            azucar: {
+                cien: 4,
+                porcion: 17
+            },
+            sodio: {
+                cien: 65,
+                porcion: 270
+            }
+        },
+    ];
+
+-
+    const grupoAdl = [
+        {
+            title: "Ensalada quinoa",
+            ingredients: "Quinoa blanca, quinoa roja, mix baby leaf, lechuga costina, pepino, zanahoria, tomates secos, aceite de oliva y perejil.",
+            porcion: "265g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 120,
+                porcion: 292
+            },
+            proteinas: {
+                cien: 2.5,
+                porcion: 6.7
+            },
+            grasasTotales: {
+                cien: 7.3,
+                porcion: 19.6
+            },
+            grasasSaturadas: {
+                cien: 1.2,
+                porcion: 3.3
+            },
+            colesterol: {
+                cien: 0,
+                porcion: 0
+            },
+            cho: {
+                cien: 7.8,
+                porcion: 20.8
+            },
+            sodio: {
+                cien: 19.6,
+                porcion: 52
+            }
+        },
+        {
+            title: "Ensalada cesar salmón",
+            ingredients: "Lechuga costina, salmon, huevo, palta, cruton y queso parmesano.",
+            porcion: "300g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 147,
+                porcion: 447
+            },
+            proteinas: {
+                cien: 11.8,
+                porcion: 35.9
+            },
+            grasasTotales: {
+                cien: 10.1,
+                porcion: 30.8
+            },
+            grasasSaturadas: {
+                cien: 2.5,
+                porcion: 7.5
+            },
+            colesterol: {
+                cien: 85,
+                porcion: 359
+            },
+            cho: {
+                cien: 2,
+                porcion: 5.9
+            },
+            sodio: {
+                cien: 85,
+                porcion: 219
+            }
+        },
+        {
+            title: "Ensalada pollo teriyaki",
+            ingredients: "Pollo, mix babay leaf, salsa teriyaki, zanahoria, cebollin y sesamo.",
+            porcion: "360g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 117,
+                porcion: 423
+            },
+            proteinas: {
+                cien: 9,
+                porcion: 32
+            },
+            grasasTotales: {
+                cien: 3.5,
+                porcion: 13
+            },
+            grasasSaturadas: {
+                cien: 0.8,
+                porcion: 3
+            },
+            colesterol: {
+                cien: 26,
+                porcion: 92
+            },
+            cho: {
+                cien: 12,
+                porcion: 43
+            },
+            sodio: {
+                cien: 88,
+                porcion: 318
+            }
+        },
+        {
+            title: "Ensalada cesar pollo palta",
+            ingredients: "Pollo, lechuga costina, huevo, palta, cruton y queso parmesano.",
+            porcion: "350g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 110,
+                porcion: 352
+            },
+            proteinas: {
+                cien: 12.1,
+                porcion: 38.5
+            },
+            grasasTotales: {
+                cien: 5.9,
+                porcion: 18.9
+            },
+            grasasSaturadas: {
+                cien: 1.8,
+                porcion: 5.7
+            },
+            colesterol: {
+                cien: 85,
+                porcion: 272
+            },
+            cho: {
+                cien: 2,
+                porcion: 6.2
+            },
+            sodio: {
+                cien: 72,
+                porcion: 229
+            }
+        },
+        {
+            title: "Ensalada de la huerta",
+            ingredients: "Couscous cocido, lechuga costina, zapallo italiano, tomate, choclo, palta, champiñon y cranberry.",
+            porcion: "350g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 92,
+                porcion: 320
+            },
+            proteinas: {
+                cien: 3.4,
+                porcion: 11.8
+            },
+            grasasTotales: {
+                cien: 2.8,
+                porcion: 9.8
+            },
+            grasasSaturadas: {
+                cien: 0.9,
+                porcion: 3
+            },
+            colesterol: {
+                cien: 0,
+                porcion: 0
+            },
+            cho: {
+                cien: 13,
+                porcion: 46
+            },
+            sodio: {
+                cien: 14.2,
+                porcion: 50
+            }
+        },
+        {
+            title: "PLA salmón ratatouille",
+            ingredients: "Salmón, berenjena, zapallo italiano, tomate, salsa de tomate, salsa pomodoro, albahaca, aceite de oliva y perejil.",
+            porcion: "350g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 103,
+                porcion: 375
+            },
+            proteinas: {
+                cien: 7.8,
+                porcion: 26.8
+            },
+            grasasTotales: {
+                cien: 6.1,
+                porcion: 21.1
+            },
+            grasasSaturadas: {
+                cien: 1.1,
+                porcion: 3.8
+            },
+            colesterol: {
+                cien: 19.5,
+                porcion: 67
+            },
+            cho: {
+                cien: 4.7,
+                porcion: 16.1
+            },
+            sodio: {
+                cien: 21.6,
+                porcion: 75
+            }
+        },
+        {
+            title: "PLA coq au vin",
+            ingredients: "Truto de pollo, papa, crema lactea, vino tinto, cebolla perla zanahoria, aceite de oliva, champiñon y nuez moscada.",
+            porcion: "380g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 142,
+                porcion: 540
+            },
+            proteinas: {
+                cien: 5,
+                porcion: 19.1
+            },
+            grasasTotales: {
+                cien: 9,
+                porcion: 36.8
+            },
+            grasasSaturadas: {
+                cien: 3.7,
+                porcion: 14
+            },
+            colesterol: {
+                cien: 36.2,
+                porcion: 137
+            },
+            cho: {
+                cien: 4.8,
+                porcion: 18.3
+            },
+            sodio: {
+                cien: 48,
+                porcion: 137
+            }
+        },
+        {
+            title: "Boeuf bourginon adl",
+            ingredients: "Papa, sobrecostilla, vino tinto, zanahoria, champiñón, cebolla, tomate, mantequilla, leche entera, cebolla perla y ajo.",
+            porcion: "350g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 108,
+                porcion: 377
+            },
+            proteinas: {
+                cien: 6.6,
+                porcion: 21.7
+            },
+            grasasTotales: {
+                cien: 4.9,
+                porcion: 17.2
+            },
+            grasasSaturadas: {
+                cien: 2.8,
+                porcion: 9.8
+            },
+            colesterol: {
+                cien: 22.2,
+                porcion: 78
+            },
+            cho: {
+                cien: 6.6,
+                porcion: 23
+            },
+            sodio: {
+                cien: 32.2,
+                porcion: 113
+            }
+        },
+        {
+            title: "Roll avenue premium",
+            ingredients: "Arroz, salmón, queso crema, palta, sesamo negro, vinagre, alga nori, azucar, aceite maravilla, harina, huevo, salsa teriyaki y panko tostado.",
+            porcion: "320g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 155,
+                porcion: 497
+            },
+            proteinas: {
+                cien: 5,
+                porcion: 17
+            },
+            grasasTotales: {
+                cien: 7.4,
+                porcion: 23.5
+            },
+            grasasSaturadas: {
+                cien: 1.4,
+                porcion: 4.4
+            },
+            colesterol: {
+                cien: 11,
+                porcion: 34
+            },
+            cho: {
+                cien: 17,
+                porcion: 55
+            },
+            sodio: {
+                cien: 353,
+                porcion: 1129
+            }
+        },
+        {
+            title: "Roll avenue",
+            ingredients: "Arroz, salmón, palta, pepino, sesamo negro, queso crema, ciboulette, vinagre, alga nori, azucar y panko tostado",
+            porcion: "275g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 121,
+                porcion: 333
+            },
+            proteinas: {
+                cien: 5,
+                porcion: 14
+            },
+            grasasTotales: {
+                cien: 4,
+                porcion: 11
+            },
+            grasasSaturadas: {
+                cien: 1,
+                porcion: 2.7
+            },
+            colesterol: {
+                cien: 12,
+                porcion: 34
+            },
+            cho: {
+                cien: 16,
+                porcion: 44
+            },
+            sodio: {
+                cien: 324,
+                porcion: 891
+            }
+        },
+        {
+            title: "SW tuna single",
+            ingredients: "Pan miga blanco, atún, mantequilla, mayonesa, apio, cebolla y jugo de limon.",
+            porcion: "140g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 176,
+                porcion: 240
+            },
+            proteinas: {
+                cien: 9.6,
+                porcion: 13.1
+            },
+            grasasTotales: {
+                cien: 8.1,
+                porcion: 11
+            },
+            grasasSaturadas: {
+                cien: 2.5,
+                porcion: 3.5
+            },
+            colesterol: {
+                cien: 20.5,
+                porcion: 27.8
+            },
+            cho: {
+                cien: 16.4,
+                porcion: 22.3
+            },
+            sodio: {
+                cien: 242,
+                porcion: 329
+            }
+        },
+        {
+            title: "SW multicereal togo",
+            ingredients: "Ciabatta, tomate, mozarella, lechuga y pesto.",
+            porcion: "265g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 226,
+                porcion: 542
+            },
+            proteinas: {
+                cien: 10,
+                porcion: 23.7
+            },
+            grasasTotales: {
+                cien: 10.3,
+                porcion: 24.8
+            },
+            grasasSaturadas: {
+                cien: 3.2,
+                porcion: 7.6
+            },
+            colesterol: {
+                cien: 27,
+                porcion: 11.2
+            },
+            cho: {
+                cien: 21.4,
+                porcion: 51
+            },
+            sodio: {
+                cien: 655,
+                porcion: 273
+            }
+        },
+        {
+            title: "SW pollo limón - palta doble",
+            ingredients: "Pollo, palta, pan miga blanco, mayonesa, mantequilla, jugo de limon, aceite de oliva, cebolla,  pimienta y sal.",
+            porcion: "270g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 263,
+                porcion: 711
+            },
+            proteinas: {
+                cien: 11.1,
+                porcion: 30
+            },
+            grasasTotales: {
+                cien: 16,
+                porcion: 43
+            },
+            grasasSaturadas: {
+                cien: 3.5,
+                porcion: 9.5
+            },
+            colesterol: {
+                cien: 27.5,
+                porcion: 74
+            },
+            cho: {
+                cien: 18.2,
+                porcion: 49
+            },
+            sodio: {
+                cien: 112,
+                porcion: 303
+            }
+        },
+        {
+            title: "Ensalada cesar salmón med",
+            ingredients: "Lechuga costina, salmon, huevo, palta, cruton y queso parmesano.",
+            porcion: "270g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 174,
+                porcion: 469
+            },
+            proteinas: {
+                cien: 9.5,
+                porcion: 25.6
+            },
+            grasasTotales: {
+                cien: 8,
+                porcion: 22
+            },
+            grasasSaturadas: {
+                cien: 2,
+                porcion: 5.5
+            },
+            colesterol: {
+                cien: 53,
+                porcion: 142
+            },
+            cho: {
+                cien: 2.6,
+                porcion: 7
+            },
+            sodio: {
+                cien: 61,
+                porcion: 165
+            }
+        },
+        {
+            title: "Yog granola berries",
+            ingredients: "Yogurt natural quillayes 0%, frambuesa, arandano, avena, cranberry, chia, almendra, aceite maravilla, miel, coco confitado y amapola.",
+            porcion: "320g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 122,
+                porcion: 391
+            },
+            proteinas: {
+                cien: 4.5,
+                porcion: 14.4
+            },
+            grasasTotales: {
+                cien: 5,
+                porcion: 15.9
+            },
+            grasasSaturadas: {
+                cien: 1.3,
+                porcion: 4.2
+            },
+            colesterol: {
+                cien: 3,
+                porcion: 11
+            },
+            cho: {
+                cien: 14,
+                porcion: 44
+            },
+            sodio: {
+                cien: 144,
+                porcion: 462
+            }
+        },
+        {
+            title: "Baguette pollo dijon",
+            ingredients: "Baguette, pollo, palta, mayonesa, mostaza dijon y lechuga.",
+            porcion: "300g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 282,
+                porcion: 859
+            },
+            proteinas: {
+                cien: 13,
+                porcion: 40
+            },
+            grasasTotales: {
+                cien: 16.5,
+                porcion: 50
+            },
+            grasasSaturadas: {
+                cien: 2.2,
+                porcion: 6.8
+            },
+            colesterol: {
+                cien: 36,
+                porcion: 109
+            },
+            cho: {
+                cien: 19,
+                porcion: 59
+            },
+            sodio: {
+                cien: 243,
+                porcion: 742
+            }
+        },
+        {
+            title: "Panini jamón queso",
+            ingredients: "Panini, queso gauda, jamon de pavo, parmesano, mostaza y mantequilla.",
+            porcion: "190g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 287,
+                porcion: 553
+            },
+            proteinas: {
+                cien: 16.9,
+                porcion: 32.7
+            },
+            grasasTotales: {
+                cien: 13.8,
+                porcion: 26.6
+            },
+            grasasSaturadas: {
+                cien: 6.5,
+                porcion: 12.6
+            },
+            colesterol: {
+                cien: 36,
+                porcion: 70
+            },
+            cho: {
+                cien: 23,
+                porcion: 45
+            },
+            sodio: {
+                cien: 651,
+                porcion: 1200
+            }
+        }
+    ];
+
+
+
+-
+    const sushi = [
+        {
+            title: "Gohan mixto",
+            ingredients: "Arroz, palta, pollo, salsa teriyaki, salmon, vinagre blanco, queso crema, camaron cocido, azucar, semillas de sesamo, wakame, hoja nori y sal.",
+            porcion: "400g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 160,
+                porcion: 620
+            },
+            proteinas: {
+                cien: 5,
+                porcion: 18
+            },
+            grasasTotales: {
+                cien: 4.5,
+                porcion: 18
+            },
+            grasasSaturadas: {
+                cien: 1.1,
+                porcion: 4.1
+            },
+            grasasMono: {
+                cien: 2.1,
+                porcion: 8.5
+            },
+            grasasPoli: {
+                cien: 0.7,
+                porcion: 2.7
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 15,
+                porcion: 50
+            },
+            cho: {
+                cien: 23,
+                porcion: 90
+            },
+            azucar: {
+                cien: 4,
+                porcion: 14
+            },
+            sodio: {
+                cien: 30,
+                porcion: 115
+            }
+        },
+        {
+            title: "Gohan pollo",
+            ingredients: "Arroz, pollo, salsa teriyaki, vinagre blanco, palta, queso crema, azucar, semillas de sesamo, wakame, hoja nori y sal.",
+            porcion: "400g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 150,
+                porcion: 620
+            },
+            proteinas: {
+                cien: 5,
+                porcion: 19
+            },
+            grasasTotales: {
+                cien: 4,
+                porcion: 15
+            },
+            grasasSaturadas: {
+                cien: 1,
+                porcion: 3.8
+            },
+            grasasMono: {
+                cien: 1.8,
+                porcion: 7.4
+            },
+            grasasPoli: {
+                cien: 0.4,
+                porcion: 1.7
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 15,
+                porcion: 59
+            },
+            cho: {
+                cien: 24,
+                porcion: 86
+            },
+            azucar: {
+                cien: 5,
+                porcion: 19
+            },
+            sodio: {
+                cien: 30,
+                porcion: 1037
+            }
+        },
+        {
+            title: "Gohan atun salmon",
+            ingredients: "Arroz, palta, kanikama, atun, salmon, salsa soya, cebollin y semillas de sesamo.",
+            porcion: "430g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 150,
+                porcion: 650
+            },
+            proteinas: {
+                cien: 5,
+                porcion: 23
+            },
+            grasasTotales: {
+                cien: 4,
+                porcion: 17
+            },
+            grasasSaturadas: {
+                cien: 0.8,
+                porcion: 3.4
+            },
+            grasasMono: {
+                cien: 2,
+                porcion: 8.6
+            },
+            grasasPoli: {
+                cien: 0.7,
+                porcion: 2.9
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 10,
+                porcion: 50
+            },
+            cho: {
+                cien: 22,
+                porcion: 93
+            },
+            azucar: {
+                cien: 3,
+                porcion: 14
+            },
+            sodio: {
+                cien: 110,
+                porcion: 480
+            }
+        },
+        {
+            title: "Supreme roll",
+            ingredients: "Arroz, palta, salmon, kanikama,  atun, queso crema, mayonesa, gengibre en vinagre, hoja nori, wasabi, vinagre blanco, azucar,  wakame y sal.",
+            porcion: "320g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 150,
+                porcion: 490
+            },
+            proteinas: {
+                cien: 5,
+                porcion: 15
+            },
+            grasasTotales: {
+                cien: 4.5,
+                porcion: 14
+            },
+            grasasSaturadas: {
+                cien: 1,
+                porcion: 3.1
+            },
+            grasasMono: {
+                cien: 1.9,
+                porcion: 6
+            },
+            grasasPoli: {
+                cien: 0.7,
+                porcion: 2
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 10,
+                porcion: 35
+            },
+            cho: {
+                cien: 23,
+                porcion: 72
+            },
+            azucar: {
+                cien: 4,
+                porcion: 12
+            },
+            sodio: {
+                cien: 105,
+                porcion: 330
+            }
+        },
+        {
+            title: "Sushilicious",
+            ingredients: "Arroz, palta, salmon, queso crema, camaron cocido,  gengibre en vinagre, hoja nori, wasabi, vinagre blanco, azucar,  wakame y sal.",
+            porcion: "330g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 160,
+                porcion: 540
+            },
+            proteinas: {
+                cien: 5,
+                porcion: 17
+            },
+            grasasTotales: {
+                cien: 6,
+                porcion: 20
+            },
+            grasasSaturadas: {
+                cien: 1.4,
+                porcion: 4.8
+            },
+            grasasMono: {
+                cien: 2.5,
+                porcion: 8.3
+            },
+            grasasPoli: {
+                cien: 1,
+                porcion: 3.4
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 20,
+                porcion: 75
+            },
+            cho: {
+                cien: 20,
+                porcion: 68
+            },
+            azucar: {
+                cien: 3,
+                porcion: 10
+            },
+            sodio: {
+                cien: 270,
+                porcion: 900
+            }
+        },
+        {
+            title: "Super roll",
+            ingredients: "Arroz, pollo, palta, camaron cocido, salsa teriyaki, almendras, pepino,  gengibre en vinagre,  hoja nori, ciboulette, wasabi, vinagre blanco, azucar, wakame y sal.",
+            porcion: "325g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 160,
+                porcion: 520
+            },
+            proteinas: {
+                cien: 4,
+                porcion: 14
+            },
+            grasasTotales: {
+                cien: 5,
+                porcion: 18
+            },
+            grasasSaturadas: {
+                cien: 1.1,
+                porcion: 3.7
+            },
+            grasasMono: {
+                cien: 2.9,
+                porcion: 9.5
+            },
+            grasasPoli: {
+                cien: 0.7,
+                porcion: 2.2
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 15,
+                porcion: 45
+            },
+            cho: {
+                cien: 22,
+                porcion: 71
+            },
+            azucar: {
+                cien: 4,
+                porcion: 12
+            },
+            sodio: {
+                cien: 320,
+                porcion: 1040
+            }
+        },
+    ];
+
+
+
+-
+    const sopas = [
+        {
+            title: "sopa de zapallo",
+            ingredients: "Zapallo, caldo de pollo, cebolla, leche descremada, azucar, aceite de oliva y gengibre.",
+            porcion: "300g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 40,
+                porcion: 120
+            },
+            proteinas: {
+                cien: 2,
+                porcion: 5
+            },
+            grasasTotales: {
+                cien: 1.5,
+                porcion: 4
+            },
+            grasasSaturadas: {
+                cien: 0.2,
+                porcion: 0.7
+            },
+            grasasMono: {
+                cien: 0.8,
+                porcion: 2.4
+            },
+            grasasPoli: {
+                cien: 0.1,
+                porcion: 0.4
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 0,
+                porcion: 0
+            },
+            cho: {
+                cien: 6,
+                porcion: 17
+            },
+            azucar: {
+                cien: 5,
+                porcion: 14
+            },
+            sodio: {
+                cien: 55,
+                porcion: 160
+            }
+        },
+        {
+            title: "sopa de verduras",
+            ingredients: "Caldo de verduras, papa, cebolla, puerro, zapallo  italiano, arveja, apio, aceite maravilla, sal, menta fresca, pimienta y ajo.",
+            porcion: "300g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 60,
+                porcion: 170
+            },
+            proteinas: {
+                cien: 2,
+                porcion: 5
+            },
+            grasasTotales: {
+                cien: 1,
+                porcion: 2.5
+            },
+            grasasSaturadas: {
+                cien: 0.1,
+                porcion: 0.3
+            },
+            grasasMono: {
+                cien: 2,
+                porcion: 0.5
+            },
+            grasasPoli: {
+                cien: 0.4,
+                porcion: 1.2
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 0,
+                porcion: 0
+            },
+            cho: {
+                cien: 11,
+                porcion: 33
+            },
+            azucar: {
+                cien: 5,
+                porcion: 14
+            },
+            sodio: {
+                cien: 190,
+                porcion: 580
+            }
+        },
+        {
+            title: "sopa consome",
+            ingredients: "Caldo de pollo, pollo, cebolla,  fideo cabello de angel, zanahoria, perejil, ajo, oregano, pimienta negra, tomillo y sal.",
+            porcion: "300g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 50,
+                porcion: 150
+            },
+            proteinas: {
+                cien: 6,
+                porcion: 19
+            },
+            grasasTotales: {
+                cien: 1.1,
+                porcion: 3.5
+            },
+            grasasSaturadas: {
+                cien: 0.3,
+                porcion: 0.8
+            },
+            grasasMono: {
+                cien: 0.3,
+                porcion: 1
+            },
+            grasasPoli: {
+                cien: 0.3,
+                porcion: 0.7
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 10,
+                porcion: 30
+            },
+            cho: {
+                cien: 4,
+                porcion: 13
+            },
+            azucar: {
+                cien: 1,
+                porcion: 2
+            },
+            sodio: {
+                cien: 180,
+                porcion: 540
+            }
+        },
+        {
+            title: "carbonada",
+            ingredients: "Caldo de pollo, carne, zapallo, papa, cebollin, zanahoria, choclo, pimenton rojo, ajo, perejil, tomillo, oregano, aji color y laurel.",
+            porcion: "300g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 60,
+                porcion: 190
+            },
+            proteinas: {
+                cien: 7,
+                porcion: 20
+            },
+            grasasTotales: {
+                cien: 2,
+                porcion: 5.5
+            },
+            grasasSaturadas: {
+                cien: 0.6,
+                porcion: 1.8
+            },
+            grasasMono: {
+                cien: 0.6,
+                porcion: 1.8
+            },
+            grasasPoli: {
+                cien: 0.2,
+                porcion: 0.7
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0.1
+            },
+            colesterol: {
+                cien: 10,
+                porcion: 30
+            },
+            cho: {
+                cien: 5,
+                porcion: 15
+            },
+            azucar: {
+                cien: 1,
+                porcion: 3
+            },
+            sodio: {
+                cien: 190,
+                porcion: 560
+            }
+        },
+        {
+            title: "sopa thai",
+            ingredients: "Caldo de pollo, leche coco, zanahoria, pollo, fideos de arroz, aceite, jugo limon, jengibre, salsa pescado, siracha, sal, ajo y cebollin.",
+            porcion: "300g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 90,
+                porcion: 280
+            },
+            proteinas: {
+                cien: 5,
+                porcion: 14
+            },
+            grasasTotales: {
+                cien: 6,
+                porcion: 19
+            },
+            grasasSaturadas: {
+                cien: 4.1,
+                porcion: 12.2
+            },
+            grasasMono: {
+                cien: 0.8,
+                porcion: 2.5
+            },
+            grasasPoli: {
+                cien: 1.3,
+                porcion: 3.8
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 10,
+                porcion: 25
+            },
+            cho: {
+                cien: 4,
+                porcion: 12
+            },
+            azucar: {
+                cien: 2,
+                porcion: 5
+            },
+            sodio: {
+                cien: 320,
+                porcion: 970
+            }
+        },
+    ];
+
+
+
+
+-
+    const swCrois = [
+        {
+            title: "Croissant jamon queso",
+            ingredients: "Croissant, queso gauda, jamon de pavo, mostaza y mantequilla.",
+            porcion: "170g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 350,
+                porcion: 590
+            },
+            proteinas: {
+                cien: 12,
+                porcion: 21
+            },
+            grasasTotales: {
+                cien: 20,
+                porcion: 34
+            },
+            grasasSaturadas: {
+                cien: 12,
+                porcion: 20
+            },
+            grasasMono: {
+                cien: 2.2,
+                porcion: 3.7
+            },
+            grasasPoli: {
+                cien: 0.3,
+                porcion: 0.5
+            },
+            acidos: {
+                cien: 0.6,
+                porcion: 1.1
+            },
+            colesterol: {
+                cien: 25,
+                porcion: 45
+            },
+            cho: {
+                cien: 31,
+                porcion: 52
+            },
+            azucar: {
+                cien: 4,
+                porcion: 6
+            },
+            sodio: {
+                cien: 440,
+                porcion: 745
+            }
+        },
+        {
+            title: "Croissant pollo pimenton",
+            ingredients: "Croissant, pollo, pimenton rojo, mayonesa, espinaca y pimienta.",
+            porcion: "180g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 290,
+                porcion: 530
+            },
+            proteinas: {
+                cien: 14,
+                porcion: 25
+            },
+            grasasTotales: {
+                cien: 14,
+                porcion: 24
+            },
+            grasasSaturadas: {
+                cien: 7,
+                porcion: 13
+            },
+            grasasMono: {
+                cien: 1.1,
+                porcion: 2
+            },
+            grasasPoli: {
+                cien: 1,
+                porcion: 1.8
+            },
+            acidos: {
+                cien: 0.4,
+                porcion: 0.8
+            },
+            colesterol: {
+                cien: 30,
+                porcion: 55
+            },
+            cho: {
+                cien: 30,
+                porcion: 53
+            },
+            azucar: {
+                cien: 3,
+                porcion: 6
+            },
+            sodio: {
+                cien: 170,
+                porcion: 310
+            }
+        },
+        {
+            title: "Croissant salmon ahumado",
+            ingredients: "Croissant, salmon ahumado, queso crema, pepino, rucula, jugo de limon y ciboulette.",
+            porcion: "210g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 250,
+                porcion: 531
+            },
+            proteinas: {
+                cien: 10,
+                porcion: 21
+            },
+            grasasTotales: {
+                cien: 12,
+                porcion: 26
+            },
+            grasasSaturadas: {
+                cien: 7,
+                porcion: 14
+            },
+            grasasMono: {
+                cien: 0.5,
+                porcion: 1
+            },
+            grasasPoli: {
+                cien: 0.6,
+                porcion: 1.2
+            },
+            acidos: {
+                cien: 0.3,
+                porcion: 0.7
+            },
+            colesterol: {
+                cien: 20,
+                porcion: 45
+            },
+            cho: {
+                cien: 25,
+                porcion: 53
+            },
+            azucar: {
+                cien: 3,
+                porcion: 6
+            },
+            sodio: {
+                cien: 290,
+                porcion: 600
+            }
+        },
+        {
+            title: "Croissant pollo salsa palta",
+            ingredients: "Croissant,  pollo, rucula, yogurt natural light,  palta, jugo de limon, miel, aceto balsamico, ciboulette,  cilantro, perejil, albahaca, sal y pimienta.",
+            porcion: "210g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 262,
+                porcion: 551
+            },
+            proteinas: {
+                cien: 12.3,
+                porcion: 26
+            },
+            grasasTotales: {
+                cien: 12.1,
+                porcion: 26
+            },
+            grasasSaturadas: {
+                cien: 6.5,
+                porcion: 13.7
+            },
+            grasasMono: {
+                cien: 1.5,
+                porcion: 3.2
+            },
+            grasasPoli: {
+                cien: 0.5,
+                porcion: 1
+            },
+            acidos: {
+                cien: 0.4,
+                porcion: 0.7
+            },
+            colesterol: {
+                cien: 25.7,
+                porcion: 55
+            },
+            cho: {
+                cien: 25.6,
+                porcion: 54
+            },
+            azucar: {
+                cien: 2,
+                porcion: 8
+            },
+            sodio: {
+                cien: 176,
+                porcion: 369
+            }
+        },
+        {
+            title: "Croissant queso fresco",
+            ingredients: "Croissant, queso fresco, tomate, rucula,  albahaca y pimienta.",
+            porcion: "270g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 220,
+                porcion: 600
+            },
+            proteinas: {
+                cien: 8,
+                porcion: 21
+            },
+            grasasTotales: {
+                cien: 12,
+                porcion: 33
+            },
+            grasasSaturadas: {
+                cien: 8,
+                porcion: 21
+            },
+            grasasMono: {
+                cien: 1.3,
+                porcion: 3.5
+            },
+            grasasPoli: {
+                cien: 0.3,
+                porcion: 0.7
+            },
+            acidos: {
+                cien: 0.4,
+                porcion: 1.1
+            },
+            colesterol: {
+                cien: 15,
+                porcion: 45
+            },
+            cho: {
+                cien: 21,
+                porcion: 57
+            },
+            azucar: {
+                cien: 3,
+                porcion: 9
+            },
+            sodio: {
+                cien: 190,
+                porcion: 520
+            }
+        },
+        {
+            title: "Croissant pollo teriyaki",
+            ingredients: "Croissant, pollo, palta, salsa teriyaki, lechuga y mantequilla",
+            porcion: "280g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 250,
+                porcion: 710
+            },
+            proteinas: {
+                cien: 12,
+                porcion: 35
+            },
+            grasasTotales: {
+                cien: 12,
+                porcion: 34
+            },
+            grasasSaturadas: {
+                cien: 6,
+                porcion: 16
+            },
+            grasasMono: {
+                cien: 2.6,
+                porcion: 7.3
+            },
+            grasasPoli: {
+                cien: 0.6,
+                porcion: 1.7
+            },
+            acidos: {
+                cien: 0.3,
+                porcion: 0.8
+            },
+            colesterol: {
+                cien: 30,
+                porcion: 90
+            },
+            cho: {
+                cien: 24,
+                porcion: 67
+            },
+            azucar: {
+                cien: 6,
+                porcion: 18
+            },
+            sodio: {
+                cien: 120,
+                porcion: 340
+            }
+        },
+        {
+            title: "Croissant jamon huevo champiñon",
+            ingredients: "Croissant, huevo, champiñon, mayonesa, rucula, pimenton, ciboulette y mantequilla.",
+            porcion: "260g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 260,
+                porcion: 660
+            },
+            proteinas: {
+                cien: 8,
+                porcion: 22
+            },
+            grasasTotales: {
+                cien: 15,
+                porcion: 39
+            },
+            grasasSaturadas: {
+                cien: 6,
+                porcion: 16
+            },
+            grasasMono: {
+                cien: 2.8,
+                porcion: 7.4
+            },
+            grasasPoli: {
+                cien: 2.4,
+                porcion: 6.2
+            },
+            acidos: {
+                cien: 0.3,
+                porcion: 0.9
+            },
+            colesterol: {
+                cien: 100,
+                porcion: 255
+            },
+            cho: {
+                cien: 21,
+                porcion: 55
+            },
+            azucar: {
+                cien: 3,
+                porcion: 7
+            },
+            sodio: {
+                cien: 240,
+                porcion: 630
+            }
+        },
+        {
+            title: "SW Pack pollo limon - jamon huevo",
+            ingredients: "Pan de miga, pollo, huevo, palta, jamon, mayonesa, mostaza, mantequilla, jugo de limon, aceite de oliva,  ciboulette,  pimienta y sal.",
+            porcion: "275g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 220,
+                porcion: 310
+            },
+            proteinas: {
+                cien: 11,
+                porcion: 31
+            },
+            grasasTotales: {
+                cien: 13,
+                porcion: 36
+            },
+            grasasSaturadas: {
+                cien: 3,
+                porcion: 8
+            },
+            grasasMono: {
+                cien: 5.8,
+                porcion: 16
+            },
+            grasasPoli: {
+                cien: 3.4,
+                porcion: 9.4
+            },
+            acidos: {
+                cien: 0.1,
+                porcion: 0.2
+            },
+            colesterol: {
+                cien: 75,
+                porcion: 205
+            },
+            cho: {
+                cien: 14,
+                porcion: 39
+            },
+            azucar: {
+                cien: 2,
+                porcion: 7
+            },
+            sodio: {
+                cien: 340,
+                porcion: 920
+            }
+        },
+        {
+            title: "SW Pollo limon - palta single",
+            ingredients: "Pan miga blanco, pollo, palta, mayonesa, mantequilla, jugo de limon, aceite de oliva,  pimienta y sal.",
+            porcion: "135g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 250,
+                porcion: 330
+            },
+            proteinas: {
+                cien: 11,
+                porcion: 15
+            },
+            grasasTotales: {
+                cien: 16,
+                porcion: 21
+            },
+            grasasSaturadas: {
+                cien: 3,
+                porcion: 4
+            },
+            grasasMono: {
+                cien: 8,
+                porcion: 11
+            },
+            grasasPoli: {
+                cien: 4,
+                porcion: 5
+            },
+            acidos: {
+                cien: 0.1,
+                porcion: 0.1
+            },
+            colesterol: {
+                cien: 30,
+                porcion: 35
+            },
+            cho: {
+                cien: 15,
+                porcion: 21
+            },
+            azucar: {
+                cien: 3,
+                porcion: 3
+            },
+            sodio: {
+                cien: 220,
+                porcion: 300
+            }
+        },
+        {
+            title: "SW Chicken cesar doble",
+            ingredients: "Pollo, pan miga  integral, tomate, lechuga, pimienta, mantequilla, mayonesa, mostaza dijon, jugo de limon y anchoas.",
+            porcion: "280g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 170,
+                porcion: 480
+            },
+            proteinas: {
+                cien: 12,
+                porcion: 33
+            },
+            grasasTotales: {
+                cien: 8,
+                porcion: 21
+            },
+            grasasSaturadas: {
+                cien: 1.5,
+                porcion: 4.5
+            },
+            grasasMono: {
+                cien: 2.5,
+                porcion: 6.7
+            },
+            grasasPoli: {
+                cien: 2.5,
+                porcion: 6.8
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0.2
+            },
+            colesterol: {
+                cien: 34.1,
+                porcion: 95
+            },
+            cho: {
+                cien: 13.7,
+                porcion: 43
+            },
+            azucar: {
+                cien: 3,
+                porcion: 8
+            },
+            sodio: {
+                cien: 228,
+                porcion: 660
+            }
+        },
+        {
+            title: "SW Chicken cesar single",
+            ingredients: "Pollo, pan miga integral, tomate, lechuga, pimienta, mantequilla, mayonesa, mostaza dijon, jugo de limon y anchoas.",
+            porcion: "140g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 170,
+                porcion: 240
+            },
+            proteinas: {
+                cien: 12,
+                porcion: 16.5
+            },
+            grasasTotales: {
+                cien: 8,
+                porcion: 10.5
+            },
+            grasasSaturadas: {
+                cien: 1.5,
+                porcion: 2.25
+            },
+            grasasMono: {
+                cien: 2.5,
+                porcion: 3.35
+            },
+            grasasPoli: {
+                cien: 2.5,
+                porcion: 3.4
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0.1
+            },
+            colesterol: {
+                cien: 34.1,
+                porcion: 47.5
+            },
+            cho: {
+                cien: 13.7,
+                porcion: 21.5
+            },
+            azucar: {
+                cien: 3,
+                porcion: 4
+            },
+            sodio: {
+                cien: 228,
+                porcion: 330
+            }
+        },
+        {
+            title: "SW Pollo pesto - jamon choclo",
+            ingredients: "Pan miga, choclo, pollo, jamon acaramelado, tomate, pesto (aceite oliva, semilla maravilla, queso parmesano, sal), lechuga y rucula.",
+            porcion: "285g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 150,
+                porcion: 440
+            },
+            proteinas: {
+                cien: 8,
+                porcion: 22
+            },
+            grasasTotales: {
+                cien: 7,
+                porcion: 19
+            },
+            grasasSaturadas: {
+                cien: 1.5,
+                porcion: 3.5
+            },
+            grasasMono: {
+                cien: 3.3,
+                porcion: 9.5
+            },
+            grasasPoli: {
+                cien: 1,
+                porcion: 2.8
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 15,
+                porcion: 40
+            },
+            cho: {
+                cien: 16,
+                porcion: 45
+            },
+            azucar: {
+                cien: 2,
+                porcion: 6
+            },
+            sodio: {
+                cien: 220,
+                porcion: 620
+            }
+        },
+        {
+            title: "Wrap chicken cesar",
+            ingredients: "Pollo, tortilla, tomate, lechuga, palta, pimienta, mantequilla, mayonesa, mostaza dijon, jugo de limon y anchoas.",
+            porcion: "300g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 180,
+                porcion: 530
+            },
+            proteinas: {
+                cien: 12,
+                porcion: 35
+            },
+            grasasTotales: {
+                cien: 8,
+                porcion: 25
+            },
+            grasasSaturadas: {
+                cien: 2,
+                porcion: 6
+            },
+            grasasMono: {
+                cien: 3.6,
+                porcion: 10.7
+            },
+            grasasPoli: {
+                cien: 2.5,
+                porcion: 7.6
+            },
+            acidos: {
+                cien: 0.1,
+                porcion: 0.2
+            },
+            colesterol: {
+                cien: 30,
+                porcion: 90
+            },
+            cho: {
+                cien: 14,
+                porcion: 42
+            },
+            azucar: {
+                cien: 1,
+                porcion: 4
+            },
+            sodio: {
+                cien: 230,
+                porcion: 700
+            }
+        },
+        {
+            title: "Wrap chicken BBQ",
+            ingredients: "Pollo, tortilla, tomate, pimenton rojo & verde, cebolla morada y salsa bbq.",
+            porcion: "245g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 170,
+                porcion: 410
+            },
+            proteinas: {
+                cien: 16,
+                porcion: 39
+            },
+            grasasTotales: {
+                cien: 3,
+                porcion: 7
+            },
+            grasasSaturadas: {
+                cien: 1,
+                porcion: 2.8
+            },
+            grasasMono: {
+                cien: 1.3,
+                porcion: 3.1
+            },
+            grasasPoli: {
+                cien: 0.6,
+                porcion: 1.6
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0.1
+            },
+            colesterol: {
+                cien: 40,
+                porcion: 95
+            },
+            cho: {
+                cien: 20,
+                porcion: 49
+            },
+            azucar: {
+                cien: 4,
+                porcion: 11
+            },
+            sodio: {
+                cien: 240,
+                porcion: 590
+            }
+        },
+        {
+            title: "Wrap tuna",
+            ingredients: "Tortilla, atun, zanahoria, mayonesa, lechuga, choclo y apio.",
+            porcion: "270g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 200,
+                porcion: 530
+            },
+            proteinas: {
+                cien: 7,
+                porcion: 18
+            },
+            grasasTotales: {
+                cien: 11,
+                porcion: 29
+            },
+            grasasSaturadas: {
+                cien: 1.9,
+                porcion: 5
+            },
+            grasasMono: {
+                cien: 3.6,
+                porcion: 9.7
+            },
+            grasasPoli: {
+                cien: 5.1,
+                porcion: 13.7
+            },
+            acidos: {
+                cien: 0.1,
+                porcion: 0.3
+            },
+            colesterol: {
+                cien: 10,
+                porcion: 30
+            },
+            cho: {
+                cien: 18,
+                porcion: 49
+            },
+            azucar: {
+                cien: 2,
+                porcion: 8
+            },
+            sodio: {
+                cien: 290,
+                porcion: 760
+            }
+        },
+        {
+            title: "Wrap veggie",
+            ingredients: "Tortilla, lechuga, tomate, queso crema, zanahoria, pepino, betaraga, salsa soya y jugo limon.",
+            porcion: "330g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 100,
+                porcion: 350
+            },
+            proteinas: {
+                cien: 5,
+                porcion: 17
+            },
+            grasasTotales: {
+                cien: 2.5,
+                porcion: 9
+            },
+            grasasSaturadas: {
+                cien: 1.5,
+                porcion: 4.2
+            },
+            grasasMono: {
+                cien: 1.3,
+                porcion: 4.3
+            },
+            grasasPoli: {
+                cien: 0.5,
+                porcion: 1.5
+            },
+            acidos: {
+                cien: 0.2,
+                porcion: 0.5
+            },
+            colesterol: {
+                cien: 5,
+                porcion: 50
+            },
+            cho: {
+                cien: 15,
+                porcion: 50
+            },
+            azucar: {
+                cien: 3,
+                porcion: 11
+            },
+            sodio: {
+                cien: 310,
+                porcion: 9
+            }
+        },
+        {
+            title: "Quesadilla club",
+            ingredients: "Tortilla, lechuga, queso mozzarella, jamon acaramelado, pollo, zanahoria, choclo y mostaza dijon.",
+            porcion: "2500g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 160,
+                porcion: 400
+            },
+            proteinas: {
+                cien: 12,
+                porcion: 29
+            },
+            grasasTotales: {
+                cien: 6,
+                porcion: 16
+            },
+            grasasSaturadas: {
+                cien: 3,
+                porcion: 8
+            },
+            grasasMono: {
+                cien: 1.9,
+                porcion: 4.6
+            },
+            grasasPoli: {
+                cien: 0.6,
+                porcion: 1.4
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0.1
+            },
+            colesterol: {
+                cien: 20,
+                porcion: 55
+            },
+            cho: {
+                cien: 14,
+                porcion: 35
+            },
+            azucar: {
+                cien: 2,
+                porcion: 4
+            },
+            sodio: {
+                cien: 310,
+                porcion: 760
+            }
+        },
+        {
+            title: "Quesadilla chicken ranch",
+            ingredients: "Tortilla, pollo, queso mozzarella, salsa ranch (mayonesa, yogurt, ciboulette, cebolla, ajo, eneldo), champiñon y tocino.",
+            porcion: "280g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 250,
+                porcion: 690
+            },
+            proteinas: {
+                cien: 17,
+                porcion: 47
+            },
+            grasasTotales: {
+                cien: 13,
+                porcion: 37
+            },
+            grasasSaturadas: {
+                cien: 4.2,
+                porcion: 11.7
+            },
+            grasasMono: {
+                cien: 4.4,
+                porcion: 12.4
+            },
+            grasasPoli: {
+                cien: 3.8,
+                porcion: 10.7
+            },
+            acidos: {
+                cien: 0.1,
+                porcion: 0.3
+            },
+            colesterol: {
+                cien: 40,
+                porcion: 110
+            },
+            cho: {
+                cien: 15,
+                porcion: 43
+            },
+            azucar: {
+                cien: 1,
+                porcion: 4
+            },
+            sodio: {
+                cien: 410,
+                porcion: 1140
+            }
+        },
+        {
+            title: "SW Jamon huevo",
+            ingredients: "Huevo, pan miga, jamon acaramelado, mayonesa, ciboulette y mantequilla.",
+            porcion: "140g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 200,
+                porcion: 280
+            },
+            proteinas: {
+                cien: 11,
+                porcion: 16
+            },
+            grasasTotales: {
+                cien: 11,
+                porcion: 15
+            },
+            grasasSaturadas: {
+                cien: 3,
+                porcion: 4.5
+            },
+            grasasMono: {
+                cien: 5,
+                porcion: 5.5
+            },
+            grasasPoli: {
+                cien: 1.7,
+                porcion: 2.3
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0.1
+            },
+            colesterol: {
+                cien: 121,
+                porcion: 170
+            },
+            cho: {
+                cien: 13.4,
+                porcion: 19
+            },
+            azucar: {
+                cien: 2.5,
+                porcion: 3.5
+            },
+            sodio: {
+                cien: 440,
+                porcion: 620
+            }
+        },
+        {
+            title: "SW Jamon palta queso fresco",
+            ingredients: "Pan miga blanco, queso fresco, jamon de pavo, palta y mantequilla.",
+            porcion: "135g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 210,
+                porcion: 316
+            },
+            proteinas: {
+                cien: 12,
+                porcion: 14.7
+            },
+            grasasTotales: {
+                cien: 12,
+                porcion: 18.7
+            },
+            grasasSaturadas: {
+                cien: 4.5,
+                porcion: 8.4
+            },
+            grasasMono: {
+                cien: 4.6,
+                porcion: 6.2
+            },
+            grasasPoli: {
+                cien: 1.2,
+                porcion: 1.3
+            },
+            acidos: {
+                cien: 0.1,
+                porcion: 0.2
+            },
+            colesterol: {
+                cien: 15,
+                porcion: 28.3
+            },
+            cho: {
+                cien: 14,
+                porcion: 21.7
+            },
+            azucar: {
+                cien: 2,
+                porcion: 3
+            },
+            sodio: {
+                cien: 390,
+                porcion: 387
+            }
+        },
+        {
+            title: "SW Capresse doble",
+            ingredients: "Pan integral, tomate, queso fresco, pesto (aceite oliva, semilla maravilla, queso parmesano, sal), lechuga y mantequilla.",
+            porcion: "265g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 200,
+                porcion: 540
+            },
+            proteinas: {
+                cien: 3,
+                porcion: 9
+            },
+            grasasTotales: {
+                cien: 13,
+                porcion: 33
+            },
+            grasasSaturadas: {
+                cien: 4,
+                porcion: 11
+            },
+            grasasMono: {
+                cien: 6,
+                porcion: 15.6
+            },
+            grasasPoli: {
+                cien: 1.5,
+                porcion: 3.9
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0.1
+            },
+            colesterol: {
+                cien: 15,
+                porcion: 35
+            },
+            cho: {
+                cien: 16,
+                porcion: 43
+            },
+            azucar: {
+                cien: 3,
+                porcion: 7
+            },
+            sodio: {
+                cien: 250,
+                porcion: 670
+            }
+        },
+        {
+            title: "SW Capresse single",
+            ingredients: "Pan integral, tomate, queso fresco, pesto (aceite oliva, semilla maravilla, queso parmesano, sal), lechuga y mantequilla.",
+            porcion: "1300g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 200,
+                porcion: 270
+            },
+            proteinas: {
+                cien: 3,
+                porcion: 4.5
+            },
+            grasasTotales: {
+                cien: 13,
+                porcion: 16.5
+            },
+            grasasSaturadas: {
+                cien: 4,
+                porcion: 5.5
+            },
+            grasasMono: {
+                cien: 6,
+                porcion: 7.8
+            },
+            grasasPoli: {
+                cien: 1.5,
+                porcion: 1.95
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0.05
+            },
+            colesterol: {
+                cien: 15,
+                porcion: 17.5
+            },
+            cho: {
+                cien: 16,
+                porcion: 21.5
+            },
+            azucar: {
+                cien: 3,
+                porcion: 3.5
+            },
+            sodio: {
+                cien: 250,
+                porcion: 335
+            }
+        },
+    ];
+
+
+-
+    const ensaladas = [
+        {
+            title: "Ensalada chicken cesar",
+            ingredients: "Mix baby leaf, pollo, tomate cherry, queso parmesano, croutons, mayonesa, mostaza dijon, jugo de limon y anchoas.",
+            porcion: "280g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 110,
+                porcion: 280
+            },
+            proteinas: {
+                cien: 11,
+                porcion: 32
+            },
+            grasasTotales: {
+                cien: 6,
+                porcion: 17
+            },
+            grasasSaturadas: {
+                cien: 1.5,
+                porcion: 4.2
+            },
+            grasasMono: {
+                cien: 2.1,
+                porcion: 5.8
+            },
+            grasasPoli: {
+                cien: 2.2,
+                porcion: 6.2
+            },
+            acidos: {
+                cien: 0.1,
+                porcion: 0.2
+            },
+            colesterol: {
+                cien: 25,
+                porcion: 100
+            },
+            cho: {
+                cien: 3,
+                porcion: 8
+            },
+            azucar: {
+                cien: 1,
+                porcion: 3
+            },
+            sodio: {
+                cien: 160,
+                porcion: 440
+            }
+
+        },
+        {
+            title: "Ensalada chicken BBQ",
+            ingredients: "Mix baby leaf, pollo, huevo, pimenton, papa, poroto verde y salsa BBQ.",
+            porcion: "315g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 80,
+                porcion: 240
+            },
+            proteinas: {
+                cien: 12,
+                porcion: 37
+            },
+            grasasTotales: {
+                cien: 1.5,
+                porcion: 4.5
+            },
+            grasasSaturadas: {
+                cien: 0.4,
+                porcion: 1.5
+            },
+            grasasMono: {
+                cien: 0.6,
+                porcion: 1.9
+            },
+            grasasPoli: {
+                cien: 0.3,
+                porcion: 0.9
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 60,
+                porcion: 185
+            },
+            cho: {
+                cien: 5,
+                porcion: 17
+            },
+            azucar: {
+                cien: 3,
+                porcion: 9
+            },
+            sodio: {
+                cien: 80,
+                porcion: 250
+            }
+
+        },
+        {
+            title: "Ensalada pasta",
+            ingredients: "Mix baby leaf, pollo, pasta, tomate, apio, pimenton, mayonesa, queso parmesano, choclo y zanahoria",
+            porcion: "300g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 90,
+                porcion: 280
+            },
+            proteinas: {
+                cien: 9,
+                porcion: 28
+            },
+            grasasTotales: {
+                cien: 2.5,
+                porcion: 7
+            },
+            grasasSaturadas: {
+                cien: 0.7,
+                porcion: 2
+            },
+            grasasMono: {
+                cien: 0.8,
+                porcion: 2.3
+            },
+            grasasPoli: {
+                cien: 0.8,
+                porcion: 2.4
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0.1
+            },
+            colesterol: {
+                cien: 25,
+                porcion: 70
+            },
+            cho: {
+                cien: 10,
+                porcion: 30
+            },
+            azucar: {
+                cien: 1,
+                porcion: 4
+            },
+            sodio: {
+                cien: 55,
+                porcion: 160
+            }
+
+        },
+        {
+            title: "Ensalada cous cous",
+            ingredients: "Mix baby leaf, cous cous, palta , zanahoria, huevo, choclo cocktail, palmito, jugo de naranja y aceituna.",
+            porcion: "360g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 100,
+                porcion: 370
+            },
+            proteinas: {
+                cien: 47,
+                porcion: 13
+            },
+            grasasTotales: {
+                cien: 3.5,
+                porcion: 13
+            },
+            grasasSaturadas: {
+                cien: 0.8,
+                porcion: 2.9
+            },
+            grasasMono: {
+                cien: 1.9,
+                porcion: 6.7
+            },
+            grasasPoli: {
+                cien: 0.6,
+                porcion: 2.1
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 25,
+                porcion: 95
+            },
+            cho: {
+                cien: 14,
+                porcion: 52
+            },
+            azucar: {
+                cien: 3,
+                porcion: 11
+            },
+            sodio: {
+                cien: 85,
+                porcion: 310
+            }
+
+        },
+        {
+            title: "Ensalada quinoa",
+            ingredients: "Mix baby leaf, quinoa, quinoa roja,  zapallo, aceite oliva, vinagre balsamico, miel, semilla de zapallo, cranberry y menta.",
+            porcion: "320g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 120,
+                porcion: 380
+            },
+            proteinas: {
+                cien: 2,
+                porcion: 11
+            },
+            grasasTotales: {
+                cien: 6.2,
+                porcion: 20
+            },
+            grasasSaturadas: {
+                cien: 2,
+                porcion: 6.4
+            },
+            grasasMono: {
+                cien: 2.9,
+                porcion: 9.5
+            },
+            grasasPoli: {
+                cien: 2,
+                porcion: 6.4
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 0,
+                porcion: 0
+            },
+            cho: {
+                cien: 13,
+                porcion: 43
+            },
+            azucar: {
+                cien: 4,
+                porcion: 12
+            },
+            sodio: {
+                cien: 33.9,
+                porcion: 85
+            }
+
+        },
+        {
+            title: "Ensaladita quinoa",
+            ingredients: "Quinoa, tomate, palta, aceituna, zanahoria, nuez, cilantro y almendra.",
+            porcion: "130g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 120,
+                porcion: 150
+            },
+            proteinas: {
+                cien: 6,
+                porcion: 7
+            },
+            grasasTotales: {
+                cien: 4,
+                porcion: 5
+            },
+            grasasSaturadas: {
+                cien: 0.7,
+                porcion: 0.9
+            },
+            grasasMono: {
+                cien: 1.9,
+                porcion: 2.4
+            },
+            grasasPoli: {
+                cien: 1.3,
+                porcion: 1.6
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 0,
+                porcion: 0
+            },
+            cho: {
+                cien: 16,
+                porcion: 21
+            },
+            azucar: {
+                cien: 3,
+                porcion: 3
+            },
+            sodio: {
+                cien: 25,
+                porcion: 35
+            }
+
+        },
+        {
+            title: "Ensalada mini cesar",
+            ingredients: "Mix baby leaf, pollo, tomate cherry, croutons, queso parmesano, mayonesa, mostaza dijon, jugo de limon y anchoas.",
+            porcion: "145g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 110,
+                porcion: 160
+            },
+            proteinas: {
+                cien: 11,
+                porcion: 16
+            },
+            grasasTotales: {
+                cien: 6,
+                porcion: 9
+            },
+            grasasSaturadas: {
+                cien: 1.5,
+                porcion: 2.5
+            },
+            grasasMono: {
+                cien: 2.1,
+                porcion: 3
+            },
+            grasasPoli: {
+                cien: 2.2,
+                porcion: 3
+            },
+            acidos: {
+                cien: 0.1,
+                porcion: 0.1
+            },
+            colesterol: {
+                cien: 35,
+                porcion: 50
+            },
+            cho: {
+                cien: 3,
+                porcion: 5
+            },
+            azucar: {
+                cien: 1,
+                porcion: 2
+            },
+            sodio: {
+                cien: 160,
+                porcion: 240
+            }
+
+        },
+        {
+            title: "Ensalada mini quinoa",
+            ingredients: "Mix baby leaf, quinoa, quinoa roja,  zapallo, aceite oliva, vinagre balsamico, miel,  semilla de zapallo, cranberry y menta.",
+            porcion: "140g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 120,
+                porcion: 160
+            },
+            proteinas: {
+                cien: 3,
+                porcion: 5
+            },
+            grasasTotales: {
+                cien: 6.2,
+                porcion: 8
+            },
+            grasasSaturadas: {
+                cien: 2,
+                porcion: 3.5
+            },
+            grasasMono: {
+                cien: 2.9,
+                porcion: 3.9
+            },
+            grasasPoli: {
+                cien: 2,
+                porcion: 2.7
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 0,
+                porcion: 0
+            },
+            cho: {
+                cien: 13,
+                porcion: 18
+            },
+            azucar: {
+                cien: 4,
+                porcion: 5
+            },
+            sodio: {
+                cien: 33.9,
+                porcion: 35
+            }
+
+        },
+        {
+            title: "Ensalada chicken BBQ mini",
+            ingredients: "Mix baby leaf, pollo, huevo, pimenton, papa, poroto verde y salsa BBQ.",
+            porcion: "215g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 70,
+                porcion: 215
+            },
+            proteinas: {
+                cien: 10,
+                porcion: 21
+            },
+            grasasTotales: {
+                cien: 1.3,
+                porcion: 3.5
+            },
+            grasasSaturadas: {
+                cien: 0.5,
+                porcion: 1
+            },
+            grasasMono: {
+                cien: 0.7,
+                porcion: 1.4
+            },
+            grasasPoli: {
+                cien: 0.3,
+                porcion: 0.7
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 65,
+                porcion: 135
+            },
+            cho: {
+                cien: 5,
+                porcion: 10
+            },
+            azucar: {
+                cien: 1,
+                porcion: 3
+            },
+            sodio: {
+                cien: 70,
+                porcion: 150
+            }
+
+        },
+        {
+            title: "Ensalada salmón",
+            ingredients: "Salmón, zanahoria, mix baby leaf, choclo, espinaca, huevo, aceite maravilla y pimienta.",
+            porcion: "275g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 150,
+                porcion: 410
+            },
+            proteinas: {
+                cien: 9,
+                porcion: 24
+            },
+            grasasTotales: {
+                cien: 11,
+                porcion: 121
+            },
+            grasasSaturadas: {
+                cien: 1.4,
+                porcion: 4.7
+            },
+            grasasMono: {
+                cien: 4.5,
+                porcion: 12.5
+            },
+            grasasPoli: {
+                cien: 3.9,
+                porcion: 10.7
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 75,
+                porcion: 205
+            },
+            cho: {
+                cien: 4,
+                porcion: 11
+            },
+            azucar: {
+                cien: 2,
+                porcion: 6
+            },
+            sodio: {
+                cien: 60,
+                porcion: 170
+            }
+
+        },
+        {
+            title: "Ensalada chicken rice",
+            ingredients: "Arroz, pollo , rucula, zanahoria, salsa sweet chilli, aceite maravilla, albahaca y perejil.",
+            porcion: "330g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 140,
+                porcion: 450
+            },
+            proteinas: {
+                cien: 12,
+                porcion: 39
+            },
+            grasasTotales: {
+                cien: 1.5,
+                porcion: 6
+            },
+            grasasSaturadas: {
+                cien: 0.5,
+                porcion: 1.5
+            },
+            grasasMono: {
+                cien: 0.7,
+                porcion: 2.3
+            },
+            grasasPoli: {
+                cien: 0.3,
+                porcion: 1.1
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0.1
+            },
+            colesterol: {
+                cien: 35,
+                porcion: 110
+            },
+            cho: {
+                cien: 18,
+                porcion: 60
+            },
+            azucar: {
+                cien: 4,
+                porcion: 13
+            },
+            sodio: {
+                cien: 30,
+                porcion: 95
+            }
+
+        },
+        {
+            title: "Ensalada roast beef",
+            ingredients: "Carne, espinaca, huevo, mix baby leaf, zanahoria, palmito, aceite maravilla, mostaza dijon, aceto balsamico, tomillo, azucar, pimienta y sal.",
+            porcion: "265g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 180,
+                porcion: 490
+            },
+            proteinas: {
+                cien: 11,
+                porcion: 29
+            },
+            grasasTotales: {
+                cien: 14,
+                porcion: 37
+            },
+            grasasSaturadas: {
+                cien: 4.5,
+                porcion: 12
+            },
+            grasasMono: {
+                cien: 5.5,
+                porcion: 14.6
+            },
+            grasasPoli: {
+                cien: 3.2,
+                porcion: 8.5
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 80,
+                porcion: 210
+            },
+            cho: {
+                cien: 4,
+                porcion: 10
+            },
+            azucar: {
+                cien: 1,
+                porcion: 4
+            },
+            sodio: {
+                cien: 135,
+                porcion: 360
+            }
+
+        },
+        {
+            title: "Pote Hummus",
+            ingredients: "Hummous (garbanzos, aceite oliva, jugo limon, tahini (pasta sesamo), ajo, sal, pimienta), zanahoria y apio.",
+            porcion: "Xg (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 0,
+                porcion: 0
+            },
+            proteinas: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasTotales: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasSaturadas: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasMono: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasPoli: {
+                cien: 0,
+                porcion: 0
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 0,
+                porcion: 0
+            },
+            cho: {
+                cien: 0,
+                porcion: 0
+            },
+            azucar: {
+                cien: 0,
+                porcion: 0
+            },
+            sodio: {
+                cien: 0,
+                porcion: 0
+            }
+        },
+    ];
+
+-
+    const pasteleria = [
+        {
+            title: "Pos maracuya",
+            ingredients: "Leche condensada, jugo de naranja, crema, queso crema, pulpa de maracuya, galleta de vainilla, azucar, mantequilla y gelatina.",
+            porcion: "145g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 280,
+                porcion: 410
+            },
+            proteinas: {
+                cien: 5,
+                porcion: 7
+            },
+            grasasTotales: {
+                cien: 11.7,
+                porcion: 18
+            },
+            grasasSaturadas: {
+                cien: 7.2,
+                porcion: 10.5
+            },
+            grasasMono: {
+                cien: 3.1,
+                porcion: 4.4
+            },
+            grasasPoli: {
+                cien: 0.4,
+                porcion: 0.8
+            },
+            acidos: {
+                cien: 0.5,
+                porcion: 0.7
+            },
+            colesterol: {
+                cien: 60,
+                porcion: 45
+            },
+            cho: {
+                cien: 39,
+                porcion: 57
+            },
+            azucar: {
+                cien: 27,
+                porcion: 40
+            },
+            sodio: {
+                cien: 110,
+                porcion: 160
+            }
+        },
+        {
+            title: "Pos Bomba",
+            ingredients: "Leche condensada, leche, leche evaporada, manjar, huevo, chocolate, azucar, harina, crema, cacao en polvo y polvo de hornear.",
+            porcion: "90g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 270,
+                porcion: 240
+            },
+            proteinas: {
+                cien: 2,
+                porcion: 2
+            },
+            grasasTotales: {
+                cien: 11,
+                porcion: 10
+            },
+            grasasSaturadas: {
+                cien: 5.7,
+                porcion: 5.2
+            },
+            grasasMono: {
+                cien: 2.8,
+                porcion: 2.6
+            },
+            grasasPoli: {
+                cien: 0.5,
+                porcion: 0.5
+            },
+            acidos: {
+                cien: 0.2,
+                porcion: 0.2
+            },
+            colesterol: {
+                cien: 65,
+                porcion: 60
+            },
+            cho: {
+                cien: 35,
+                porcion: 32
+            },
+            azucar: {
+                cien: 29,
+                porcion: 27
+            },
+            sodio: {
+                cien: 105,
+                porcion: 100
+            }
+        },
+        {
+            title: "Pos oreo",
+            ingredients: "Galleta oreo, manjar, leche, azucar, chocolate cobertura,  crema, queso crema y yema de huevo.",
+            porcion: "100g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 370,
+                porcion: 370
+            },
+            proteinas: {
+                cien: 3,
+                porcion: 3
+            },
+            grasasTotales: {
+                cien: 17,
+                porcion: 17
+            },
+            grasasSaturadas: {
+                cien: 8.3,
+                porcion: 8.3
+            },
+            grasasMono: {
+                cien: 4.3,
+                porcion: 4.3
+            },
+            grasasPoli: {
+                cien: 1,
+                porcion: 1
+            },
+            acidos: {
+                cien: 0.3,
+                porcion: 0.3
+            },
+            colesterol: {
+                cien: 35,
+                porcion: 35
+            },
+            cho: {
+                cien: 50,
+                porcion: 50
+            },
+            azucar: {
+                cien: 43,
+                porcion: 43
+            },
+            sodio: {
+                cien: 170,
+                porcion: 170
+            }
+        },
+        {
+            title: "QQ Blondie SD",
+            ingredients: "Harina, azucar rubia, cranberry, chocolate blanco, mantequilla, queso crema, huevo, azucar flor, polvo de hornear, esencia de vainilla, sal y canela.",
+            porcion: "105g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 290,
+                porcion: 310
+            },
+            proteinas: {
+                cien: 3,
+                porcion: 3
+            },
+            grasasTotales: {
+                cien: 12,
+                porcion: 12.8
+            },
+            grasasSaturadas: {
+                cien: 7.3,
+                porcion: 7.7
+            },
+            grasasMono: {
+                cien: 3.2,
+                porcion: 3.3
+            },
+            grasasPoli: {
+                cien: 0.5,
+                porcion: 0.5
+            },
+            acidos: {
+                cien: 0.3,
+                porcion: 0.3
+            },
+            colesterol: {
+                cien: 35,
+                porcion: 35
+            },
+            cho: {
+                cien: 43,
+                porcion: 45
+            },
+            azucar: {
+                cien: 26,
+                porcion: 28
+            },
+            sodio: {
+                cien: 115,
+                porcion: 120
+            }
+        },
+        {
+            title: "QQ Chocolate",
+            ingredients: "Azucar, harina, huevo, chocolate, leche, mantequilla, polvo de hornear, esencia de vainilla y sal.",
+            porcion: "100g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 280,
+                porcion: 280
+            },
+            proteinas: {
+                cien: 5,
+                porcion: 5
+            },
+            grasasTotales: {
+                cien: 10,
+                porcion: 10
+            },
+            grasasSaturadas: {
+                cien: 5.4,
+                porcion: 5.4
+            },
+            grasasMono: {
+                cien: 2.9,
+                porcion: 2.9
+            },
+            grasasPoli: {
+                cien: 0.6,
+                porcion: 0.6
+            },
+            acidos: {
+                cien: 0.2,
+                porcion: 0.2
+            },
+            colesterol: {
+                cien: 75,
+                porcion: 75
+            },
+            cho: {
+                cien: 43,
+                porcion: 43
+            },
+            azucar: {
+                cien: 28,
+                porcion: 28
+            },
+            sodio: {
+                cien: 160,
+                porcion: 160
+            }
+        },
+        {
+            title: "QQ Limon",
+            ingredients: "Harina, azucar, huevo, aceite marvilla, jugo de limon, semilla de amapola y polvo de hornear.",
+            porcion: "110g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 281,
+                porcion: 309
+            },
+            proteinas: {
+                cien: 4.5,
+                porcion: 5
+            },
+            grasasTotales: {
+                cien: 11.6,
+                porcion: 12.8
+            },
+            grasasSaturadas: {
+                cien: 1.6,
+                porcion: 1.7
+            },
+            grasasMono: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasPoli: {
+                cien: 0,
+                porcion: 0
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 45,
+                porcion: 50
+            },
+            cho: {
+                cien: 38.9,
+                porcion: 44
+            },
+            azucar: {
+                cien: 0,
+                porcion: 0
+            },
+            sodio: {
+                cien: 133,
+                porcion: 146
+            }
+        },
+        {
+            title: "QQ Platano",
+            ingredients: "Platano, harina, azucar, huevo, mantequilla, damasco seco, yogurt natural light y polvo de hornear.",
+            porcion: "110g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 240,
+                porcion: 270
+            },
+            proteinas: {
+                cien: 4,
+                porcion: 4
+            },
+            grasasTotales: {
+                cien: 10,
+                porcion: 10.9
+            },
+            grasasSaturadas: {
+                cien: 5.9,
+                porcion: 6.5
+            },
+            grasasMono: {
+                cien: 2.6,
+                porcion: 2.9
+            },
+            grasasPoli: {
+                cien: 0.5,
+                porcion: 0.5
+            },
+            acidos: {
+                cien: 0.3,
+                porcion: 0.3
+            },
+            colesterol: {
+                cien: 65,
+                porcion: 70
+            },
+            cho: {
+                cien: 35,
+                porcion: 38
+            },
+            azucar: {
+                cien: 22,
+                porcion: 24
+            },
+            sodio: {
+                cien: 140,
+                porcion: 15
+            }
+        },
+        {
+            title: "QQ Flapjacks",
+            ingredients: "Avena, azucar rubia, mantequilla, cranberry, miel, almendra y nuez.",
+            porcion: "70g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 490,
+                porcion: 343
+            },
+            proteinas: {
+                cien: 5.3,
+                porcion: 3.7
+            },
+            grasasTotales: {
+                cien: 26.2,
+                porcion: 18.3
+            },
+            grasasSaturadas: {
+                cien: 12.5,
+                porcion: 8.8
+            },
+            grasasMono: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasPoli: {
+                cien: 0,
+                porcion: 0
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 47,
+                porcion: 33.2
+            },
+            cho: {
+                cien: 57,
+                porcion: 40
+            },
+            azucar: {
+                cien: 0,
+                porcion: 0
+            },
+            sodio: {
+                cien: 22.2,
+                porcion: 15.5
+            }
+        },
+        {
+            title: "QQ Barra nuts",
+            ingredients: "Almendra, miel, nuez, mani, jarabe de maiz, quinoa inflada, aceite maravilla, chocolate cobertura, semilla de linaza, sal y esencia de vainilla.",
+            porcion: "70g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 510,
+                porcion: 357
+            },
+            proteinas: {
+                cien: 13.5,
+                porcion: 9.4
+            },
+            grasasTotales: {
+                cien: 36.6,
+                porcion: 25.6
+            },
+            grasasSaturadas: {
+                cien: 4.2,
+                porcion: 4
+            },
+            grasasMono: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasPoli: {
+                cien: 0,
+                porcion: 0
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 0.01,
+                porcion: 0
+            },
+            cho: {
+                cien: 32.3,
+                porcion: 22.6
+            },
+            azucar: {
+                cien: 0,
+                porcion: 0
+            },
+            sodio: {
+                cien: 288,
+                porcion: 201
+            }
+        },
+        {
+            title: "Pos vasito cheesecake frambuesa",
+            ingredients: "Queso crema, azucar, huevo, frambuesa, galleta de mantequilla, mantequilla y almendras.",
+            porcion: "90g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 350,
+                porcion: 330
+            },
+            proteinas: {
+                cien: 2,
+                porcion: 2
+            },
+            grasasTotales: {
+                cien: 9,
+                porcion: 7.9
+            },
+            grasasSaturadas: {
+                cien: 4.1,
+                porcion: 3.8
+            },
+            grasasMono: {
+                cien: 2.4,
+                porcion: 2.2
+            },
+            grasasPoli: {
+                cien: 0.8,
+                porcion: 0.7
+            },
+            acidos: {
+                cien: 0.2,
+                porcion: 0.2
+            },
+            colesterol: {
+                cien: 45,
+                porcion: 45
+            },
+            cho: {
+                cien: 65,
+                porcion: 60
+            },
+            azucar: {
+                cien: 60,
+                porcion: 55
+            },
+            sodio: {
+                cien: 90,
+                porcion: 85
+            }
+        },
+        {
+            title: "Pos 3 leches",
+            ingredients: "Azucar, huevo, harina, leche entera, leche evaporada, leche condensada, polvo de hornear y esencia de vainilla.",
+            porcion: "120g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 240,
+                porcion: 290
+            },
+            proteinas: {
+                cien: 2,
+                porcion: 22
+            },
+            grasasTotales: {
+                cien: 5,
+                porcion: 6
+            },
+            grasasSaturadas: {
+                cien: 2.8,
+                porcion: 3.9
+            },
+            grasasMono: {
+                cien: 1.4,
+                porcion: 0
+            },
+            grasasPoli: {
+                cien: 0.4,
+                porcion: 0
+            },
+            acidos: {
+                cien: 0.2,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 50,
+                porcion: 60
+            },
+            cho: {
+                cien: 42,
+                porcion: 50
+            },
+            azucar: {
+                cien: 33,
+                porcion: 39
+            },
+            sodio: {
+                cien: 200,
+                porcion: 240
+            }
+        },
+        {
+            title: "Brownie SD",
+            ingredients: "Chocolate, azucar rubia, huevo, harina, azucar, mantequilla, lonja de naranja confitada, cacao en polvo, esencia de vainilla y sal.",
+            porcion: "95g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 470,
+                porcion: 461
+            },
+            proteinas: {
+                cien: 6.9,
+                porcion: 6.7
+            },
+            grasasTotales: {
+                cien: 21.9,
+                porcion: 21.4
+            },
+            grasasSaturadas: {
+                cien: 13,
+                porcion: 12.8
+            },
+            grasasMono: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasPoli: {
+                cien: 0,
+                porcion: 0
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 75,
+                porcion: 73
+            },
+            cho: {
+                cien: 71,
+                porcion: 70
+            },
+            azucar: {
+                cien: 0,
+                porcion: 0
+            },
+            sodio: {
+                cien: 182,
+                porcion: 178
+            }
+        },
+        {
+            title: "QQ Zanahoria",
+            ingredients: "Azucar, aceite maravilla, harina, huevo, zanahoria, coco rallado, pasas, bicarbonato de sodio, ralladura de naranja, esencia de vainilla, canela en polvo y sal.",
+            porcion: "110g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 330,
+                porcion: 383
+            },
+            proteinas: {
+                cien: 3.2,
+                porcion: 3.5
+            },
+            grasasTotales: {
+                cien: 18.9,
+                porcion: 20.8
+            },
+            grasasSaturadas: {
+                cien: 4.8,
+                porcion: 5.3
+            },
+            grasasMono: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasPoli: {
+                cien: 0,
+                porcion: 0
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 32,
+                porcion: 35.2
+            },
+            cho: {
+                cien: 36.6,
+                porcion: 40
+            },
+            azucar: {
+                cien: 0,
+                porcion: 0
+            },
+            sodio: {
+                cien: 30.1,
+                porcion: 33.1
+            }
+        },
+        {
+            title: "QQ Manzana",
+            ingredients: "Azucar, harina, manzana, aceite maravilla, huevo, pasas, esencia de vainilla, bicarbonato de sodio, sal y canela molida.",
+            porcion: "110g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 316,
+                porcion: 347
+            },
+            proteinas: {
+                cien: 3.6,
+                porcion: 3.9
+            },
+            grasasTotales: {
+                cien: 11.4,
+                porcion: 12.5
+            },
+            grasasSaturadas: {
+                cien: 1.4,
+                porcion: 1.5
+            },
+            grasasMono: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasPoli: {
+                cien: 0,
+                porcion: 0
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 26,
+                porcion: 28.6
+            },
+            cho: {
+                cien: 50,
+                porcion: 55
+            },
+            azucar: {
+                cien: 0,
+                porcion: 0
+            },
+            sodio: {
+                cien: 25.8,
+                porcion: 28.3
+            }
+        },
+        {
+            title: "Galleton SD",
+            ingredients: "Harina, azucar rubia, mantequilla, chocolate, chocolate blanco, almendra, avena, azucar, huevo, esencia de vainilla, bicarbonato de sodio, sal y canela en polvo.",
+            porcion: "80g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 489,
+                porcion: 391
+            },
+            proteinas: {
+                cien: 7,
+                porcion: 5.6
+            },
+            grasasTotales: {
+                cien: 25.6,
+                porcion: 20.5
+            },
+            grasasSaturadas: {
+                cien: 12.4,
+                porcion: 10
+            },
+            grasasMono: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasPoli: {
+                cien: 0,
+                porcion: 0
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 45,
+                porcion: 35.7
+            },
+            cho: {
+                cien: 57,
+                porcion: 46
+            },
+            azucar: {
+                cien: 0,
+                porcion: 0
+            },
+            sodio: {
+                cien: 103,
+                porcion: 82
+            }
+        },
+        {
+            title: "Galleton cranberry",
+            ingredients: "Harina, avena, azucar, mantequilla, azucar rubia, pasas rubias, huevo, cranberry, esencia de vainilla, sal, bicarbonato de sodio y polvo de hornear.",
+            porcion: "80g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 433,
+                porcion: 346
+            },
+            proteinas: {
+                cien: 5.3,
+                porcion: 4.3
+            },
+            grasasTotales: {
+                cien: 15.3,
+                porcion: 12.2
+            },
+            grasasSaturadas: {
+                cien: 8.6,
+                porcion: 6.9
+            },
+            grasasMono: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasPoli: {
+                cien: 0,
+                porcion: 0
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 55,
+                porcion: 45
+            },
+            cho: {
+                cien: 68,
+                porcion: 55
+            },
+            azucar: {
+                cien: 0,
+                porcion: 0
+            },
+            sodio: {
+                cien: 96,
+                porcion: 77
+            }
+        },
+        {
+            title: "Yog lite",
+            ingredients: "Yogurt natural quillayes, adelgazul fibra, hojuela de fitness, arandano, frambuesa, chia y linaza.",
+            porcion: "310g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 78,
+                porcion: 245
+            },
+            proteinas: {
+                cien: 4.6,
+                porcion: 14.2
+            },
+            grasasTotales: {
+                cien: 1.2,
+                porcion: 3.6
+            },
+            grasasSaturadas: {
+                cien: 0.4,
+                porcion: 1.2
+            },
+            grasasMono: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasPoli: {
+                cien: 0,
+                porcion: 0
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 2.7,
+                porcion: 8.3
+            },
+            cho: {
+                cien: 11.8,
+                porcion: 36.7
+            },
+            azucar: {
+                cien: 0,
+                porcion: 0
+            },
+            sodio: {
+                cien: 92,
+                porcion: 287
+            }
+        },
+        {
+            title: "Yog Cranberry",
+            ingredients: "Yogurt natural quillayes, avena, cranberry, chia, almendra, aceite maravilla, miel, coco confitado, azucar, huevo, amapola y sal.",
+            porcion: "305g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 128,
+                porcion: 391
+            },
+            proteinas: {
+                cien: 4.6,
+                porcion: 14.1
+            },
+            grasasTotales: {
+                cien: 5.2,
+                porcion: 15.7
+            },
+            grasasSaturadas: {
+                cien: 1.4,
+                porcion: 4.2
+            },
+            grasasMono: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasPoli: {
+                cien: 0,
+                porcion: 0
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 3.5,
+                porcion: 10.6
+            },
+            cho: {
+                cien: 15.5,
+                porcion: 47
+            },
+            azucar: {
+                cien: 0,
+                porcion: 0
+            },
+            sodio: {
+                cien: 150,
+                porcion: 459
+            }
+        },
+        {
+            title: "Pos 3 leches chocolate",
+            ingredients: "Azucar, huevo, harina, leche entera, leche evaporada, leche condensada, cacao, polvo de hornear y esencia de vainilla.",
+            porcion: "152g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 263,
+                porcion: 400
+            },
+            proteinas: {
+                cien: 7.8,
+                porcion: 11.8
+            },
+            grasasTotales: {
+                cien: 5.1,
+                porcion: 7.8
+            },
+            grasasSaturadas: {
+                cien: 2.6,
+                porcion: 3.9
+            },
+            grasasMono: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasPoli: {
+                cien: 0,
+                porcion: 0
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 74,
+                porcion: 112
+            },
+            cho: {
+                cien: 47,
+                porcion: 72
+            },
+            azucar: {
+                cien: 0,
+                porcion: 0
+            },
+            sodio: {
+                cien: 190,
+                porcion: 288
+            }
+        },
+        {
+            title: "Pos vasito cheesecake maracuya",
+            ingredients: "Queso crema, azucar, huevo, maracuya, galleta de mantequilla, mantequilla y almendras.",
+            porcion: "90g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 335,
+                porcion: 309
+            },
+            proteinas: {
+                cien: 4.1,
+                porcion: 3.8
+            },
+            grasasTotales: {
+                cien: 8.6,
+                porcion: 7.9
+            },
+            grasasSaturadas: {
+                cien: 4.1,
+                porcion: 3.8
+            },
+            grasasMono: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasPoli: {
+                cien: 0,
+                porcion: 0
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 46,
+                porcion: 43
+            },
+            cho: {
+                cien: 63,
+                porcion: 58
+            },
+            azucar: {
+                cien: 0,
+                porcion: 0
+            },
+            sodio: {
+                cien: 92,
+                porcion: 95
+            }
+        },
+        {
+            title: "Flan casero",
+            ingredients: "Leche, leche condensada, azucar y huevo.",
+            porcion: "90g (1 paquete)",
+            porcionEnvase: "1 aprox.",
+            kcal: {
+                cien: 0,
+                porcion: 0
+            },
+            proteinas: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasTotales: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasSaturadas: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasMono: {
+                cien: 0,
+                porcion: 0
+            },
+            grasasPoli: {
+                cien: 0,
+                porcion: 0
+            },
+            acidos: {
+                cien: 0,
+                porcion: 0
+            },
+            colesterol: {
+                cien: 0,
+                porcion: 0
+            },
+            cho: {
+                cien: 0,
+                porcion: 0
+            },
+            azucar: {
+                cien: 0,
+                porcion: 0
+            },
+            sodio: {
+                cien: 0,
+                porcion: 0
+            }
+        },
+    ];

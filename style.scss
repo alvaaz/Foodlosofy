@@ -11,6 +11,15 @@ html {
 .header {
     display: grid;
     grid-template-columns: 20% 50% auto;
+    @media screen and (max-width: 768px){
+        grid-template-columns: 1fr;
+    }
+    @media screen and (min-width: 769px), print {
+        grid-template-columns: 1fr;
+    }
+    @media screen and (min-width: 1024px) {
+        grid-template-columns: 24% 50% auto;
+    }
     &__title {
         display: flex;
         align-items: center;
@@ -42,15 +51,6 @@ html {
         background-color: #1A2339;
         color: white;
     }
-    @media screen and (max-width: 768px){
-        grid-template-columns: 1fr;
-    }
-    @media screen and (min-width: 769px), print {
-        grid-template-columns: 1fr;
-    }
-    @media screen and (min-width: 1024px) {
-        grid-template-columns: 24% 50% auto;
-    }
 }
 
 .product {
@@ -71,7 +71,7 @@ html {
             flex-direction: column;
         }
         @media screen and (min-width: 769px), print {
-            flex-direction: column;
+            flex-direction: row;
         }
         @media screen and (min-width: 1024px) {
             flex-direction: row;
@@ -83,6 +83,9 @@ html {
     &__ingredients{
         flex-basis: 50%;
         margin-right: 32px;
+        @media screen and (max-width: 768px){
+            padding-bottom: 40px;
+        }
     }
     &__nutritional{
         flex-basis: 50%;
@@ -156,7 +159,6 @@ td, th {
     }
 }
 
-
 .ingredients__desc {
     line-height: 2rem;
     font-weight: 500;
@@ -167,4 +169,31 @@ td, th {
 
 .nutritional__indent {
     text-indent: 16px;
+}
+
+.nav {
+    display: flex;
+    background-color: #fa423b;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+    }
+    &__logo {
+        object-fit: contain;
+        margin-right: auto;
+    }
+    &__item {
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 2px;
+        color: #ffffff;
+        text-decoration: none;
+        padding: .6rem;
+        &:hover {
+            color: rgba($color: white, $alpha: 0.4)
+        }
+    }
 }

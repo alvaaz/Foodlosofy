@@ -1,0 +1,16 @@
+extends includes/_skeleton
+append config
+    -pageTitle = "Ensaladas"
+
+block header
+    header.header
+        .header__title
+            h1 #{pageTitle}
+        .header__image
+            img(src="http://www.foodlosofia.cl/wp-content/uploads/2018/11/ensaladas-2.jpg", alt="")
+        .header__desc
+            p ¿Cuál es el secreto de una buena ensalada? ¿Lechugas hidropónicas y verduras frescas? De todas maneras pero para llegar a lo sublime hay que usar un aderezo super Delicious.
+    main.product
+        each product in ensaladas
+            +product(product)
+    script(src="./index.js")

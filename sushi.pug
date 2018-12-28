@@ -1,0 +1,16 @@
+extends includes/_skeleton
+append config
+    -pageTitle = "Sushi"
+
+block header
+    header.header
+        .header__title
+            h1 #{pageTitle}
+        .header__image
+            img(src="http://www.foodlosofia.cl/wp-content/uploads/2018/10/sushi-2.jpg", alt="")
+        .header__desc
+            p ¿Sabías que lo que más vendemos es sushi? Siempre está recién hecho y usamos los mejores productos de nuestro Oceanos Pacífico. Además no tienes que esperar que te lo preparen... ¿que mejor?
+    main.product
+        each product in sushi
+            +product(product)
+    script(src="./index.js")

@@ -1,6 +1,6 @@
 extends includes/_skeleton
 append config
-    -pageTitle = "Platos calientes"
+    -pageTitle = "Grupo ADL"
 
 block header
     header.header
@@ -9,8 +9,8 @@ block header
         .header__image
             img(src="http://www.foodlosofia.cl/wp-content/uploads/2018/11/platoscalientes.jpg", alt="")
         .header__desc
-            p Nuestra nueva línea de platos calientes no solo son ricos a la hora de almuerzo sino para llevar a tu casa cuando estés cansado y no quieras cocinar. Siempre rápido y delicioso.
+            p Texto faltante
     main.product
-        each product in platosCalientes
-            +product(product)
+        each product in grupoAdl
+            +product2(product)
     script(src="./index.js")

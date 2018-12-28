@@ -1,0 +1,16 @@
+extends includes/_skeleton
+append config
+    -pageTitle = "Pastelería"
+
+block header
+    header.header
+        .header__title
+            h1 #{pageTitle}
+        .header__image
+            img(src="http://www.foodlosofia.cl/wp-content/uploads/2018/11/bomba.jpg", alt="")
+        .header__desc
+            p Nuestros postren no llevan colorantes ni preservantes. Están hechos con cariño e ingredientes de la mejor calidad. Son los mismos que hacemos en nuestra casa y que nuestros amigos siempre opinan que es lo mejor que han probado.
+    main.product
+        each product in pasteleria
+            +product2(product)
+    script(src="./index.js")

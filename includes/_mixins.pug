@@ -1,0 +1,114 @@
+mixin product(product)
+    .product__section
+        .product__ingredients
+            h2.ingredients__title= product.title
+            p.ingredients__desc
+                span Ingredientes:
+                |  #{product.ingredients}
+        .product__nutritional
+            table
+                thead.nutritional__head
+                    tr
+                        th.nutritional__title(colspan='3') Información nutricional
+                    tr
+                        td.nutritional__desc
+                            |Porción: #{product.porcion}
+                            br
+                            |Porción por envase: #{product.porcionEnvase}
+                        td.nutritional__desc 100 g
+                        td.nutritional__desc 1 porción
+                tbody.nutritional__body
+                    tr
+                        td Energía (Kcal)
+                        td= product.kcal.cien
+                        td= product.kcal.porcion
+                    tr
+                        td Proteínas (g)
+                        td= product.proteinas.cien
+                        td= product.proteinas.porcion
+                    tr
+                        td Grasas Totales (g)
+                        td= product.grasasTotales.cien
+                        td= product.grasasTotales.porcion
+                    tr
+                        td.nutritional__indent Grasas Saturadas (g)
+                        td= product.grasasSaturadas.cien
+                        td= product.grasasSaturadas.porcion
+                    tr
+                        td.nutritional__indent Grasas Monoinsat (g)
+                        td= product.grasasMono.cien
+                        td= product.grasasMono.porcion
+                    tr
+                        td.nutritional__indent Grasas Polinsat (g)
+                        td= product.grasasPoli.cien
+                        td= product.grasasPoli.porcion
+                    tr
+                        td.nutritional__indent Acidos grasos trans (g)
+                        td= product.acidos.cien
+                        td= product.acidos.porcion
+                    tr
+                        td Colesterol (mg)
+                        td= product.colesterol.cien
+                        td= product.colesterol.porcion
+                    tr
+                        td Hidratos de Carbono disp. (g)
+                        td= product.cho.cien
+                        td= product.cho.porcion
+                    tr
+                        td Azucares Totales
+                        td= product.azucar.cien
+                        td= product.azucar.porcion
+                    tr
+                        td Sodio (mg)
+                        td= product.sodio.cien
+                        td= product.sodio.porcion
+
+
+mixin product2(product)
+    .product__section
+        .product__ingredients
+            h2.ingredients__title= product.title
+            p.ingredients__desc
+                span Ingredientes:
+                |  #{product.ingredients}
+        .product__nutritional
+            table
+                thead.nutritional__head
+                    tr
+                        th.nutritional__title(colspan='3') Información nutricional
+                    tr
+                        td.nutritional__desc
+                            |Porción: #{product.porcion}
+                            br
+                            |Porción por envase: #{product.porcionEnvase}
+                        td.nutritional__desc 100 g
+                        td.nutritional__desc 1 porción
+                tbody.nutritional__body
+                    tr
+                        td Energía (Kcal)
+                        td= product.kcal.cien
+                        td= product.kcal.porcion
+                    tr
+                        td Proteínas (g)
+                        td= product.proteinas.cien
+                        td= product.proteinas.porcion
+                    tr
+                        td Grasas Totales (g)
+                        td= product.grasasTotales.cien
+                        td= product.grasasTotales.porcion
+                    tr
+                        td.nutritional__indent Grasas Saturadas (g)
+                        td= product.grasasSaturadas.cien
+                        td= product.grasasSaturadas.porcion
+                    tr
+                        td Colesterol (mg)
+                        td= product.colesterol.cien
+                        td= product.colesterol.porcion
+                    tr
+                        td Hidratos de Carbono disp. (g)
+                        td= product.cho.cien
+                        td= product.cho.porcion
+                    tr
+                        td Sodio (mg)
+                        td= product.sodio.cien
+                        td= product.sodio.porcion

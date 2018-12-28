@@ -1,0 +1,16 @@
+extends includes/_skeleton
+append config
+    -pageTitle = "Sopas"
+
+block header
+    header.header
+        .header__title
+            h1 #{pageTitle}
+        .header__image
+            img(src="http://www.foodlosofia.cl/wp-content/uploads/2018/11/carbonada.jpg", alt="")
+        .header__desc
+            p Seguimos fieles a tomar nuestras mejores recetas caseras y crear una línea de sopas frescas y exquisitas hechas con verduras del día y mucho cariño para esos días de invierno. Obviamente sin colorantes, conservantes ni perservantes. ¡Como la de tu casa!
+    main.product
+        each product in sopas
+            +product(product)
+    script(src="./index.js")

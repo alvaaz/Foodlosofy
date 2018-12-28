@@ -1,0 +1,16 @@
+extends includes/_skeleton
+append config
+    -pageTitle = "Sandwiches & Crois"
+
+block header
+    header.header
+        .header__title
+            h1 #{pageTitle}
+        .header__image
+            img(src="http://www.foodlosofia.cl/wp-content/uploads/2018/11/san.jpg", alt="")
+        .header__desc
+            p Nuestros panes son especialmente desarrollados para complementarlos con nuestros rellenos , lo que nos ha dado un magnífico resultado.
+    main.product
+        each product in swCrois
+            +product(product)
+    script(src="./index.js")
