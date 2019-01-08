@@ -110,16 +110,22 @@ html {
     color: #2EAEFF; }
     @media screen and (max-width: 768px) {
       .product__section {
-        flex-direction: column; } }
-    @media screen and (min-width: 769px), print {
+        flex-direction: column; }
+        .product__section:nth-child(odd) {
+          background-color: #FBF6F4;
+          color: #FD4A41; } }
+    @media screen and (min-width: 769px) and (max-width: 1023px) {
       .product__section {
-        flex-direction: row; } }
+        flex-direction: row; }
+        .product__section:nth-child(odd) {
+          background-color: #FBF6F4;
+          color: #FD4A41; } }
     @media screen and (min-width: 1024px) {
       .product__section {
-        flex-direction: row; } }
-    .product__section:nth-child(4n), .product__section:nth-child(4n+1) {
-      background-color: #FBF6F4;
-      color: #FD4A41; }
+        flex-direction: row; }
+        .product__section:nth-child(4n), .product__section:nth-child(4n+1) {
+          background-color: #FBF6F4;
+          color: #FD4A41; } }
   .product__ingredients {
     flex-basis: 50%;
     margin-right: 32px; }
