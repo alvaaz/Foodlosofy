@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sanchez"/><title>Donde estamos</title><link href="style.css" rel="stylesheet"></head><body><nav class="nav" role="navigation"><a class="nav__brand" href="index.html"><img class="nav__logo" src="images/logo.svg" alt=""/></a><div class="nav__menu"><a class="nav__item custom" href="#">Nuestra comida<div class="nav__submenu"><a class="nav__subitem" href="sandwiches.html">Sandwiches</a><a class="nav__subitem" href="pasteleria.html">Pastelería</a><a class="nav__subitem" href="ensaladas.html">Ensaladas</a><a class="nav__subitem" href="platoscalientes.html">Platos calientes</a><a class="nav__subitem" href="sushi.html">Sushi</a><a class="nav__subitem" href="sopas.html">Sopas</a></div></a><a class="nav__item" href="#">Foodlosofia</a><a class="nav__item" href="donde-estamos.html">Donde estamos</a></div><button class="menu-wrapper" id="menuButton"><div class="hamburger-menu" id="menuHamburger"></div></button></nav><main class="map"><div id="map"></div><section class="places"><div class="places__item"><h2 class="place__title">Alcantara</h2><p class="place__address">Apoquindo 3910, Las Condes.</p><span class="place__contact">Fono: (56 2) 2481-4971</span><span class="place__contact">Email: alcantara@superdelicious.cl</span></div><div class="places__item"><h2 class="place__title">Boulevard Nueva Las Condes</h2><p class="place__address">Edificio de las Artes, Cerro el Plomo 5680, Local 206, Las Condes.</p><span class="place__contact">Fono: (56 2) 2481-4971</span><span class="place__contact">Email: alcantara@superdelicious.cl</span></div><div class="places__item"><h2 class="place__title">Ciudad Empresarial</h2><p class="place__address">Avenida del Valle 662, Huechuraba.</p><span class="place__contact">Fono: (56 2) 2481-4971</span><span class="place__contact">Email: alcantara@superdelicious.cl</span></div><div class="places__item"><h2 class="place__title">Edificio Millenium</h2><p class="place__address">Avenida Vitacura 2939, Lobby, Las Condes.</p><span class="place__contact">Fono: (56 2) 2481-4971</span><span class="place__contact">Email: alcantara@superdelicious.cl</span></div><div class="places__item"><h2 class="place__title">Isidora Goyenechea</h2><p class="place__address">Isidora Goyenechea 3600, Las Condes.</p><span class="place__contact">Fono: (56 2) 2481-4971</span><span class="place__contact">Email: alcantara@superdelicious.cl</span></div><div class="places__item"><h2 class="place__title">La Concepción</h2><p class="place__address">La Concepción 81, Providencia, Santiago.</p><span class="place__contact">Fono: (56 2) 2481-4971</span><span class="place__contact">Email: alcantara@superdelicious.cl</span></div><div class="places__item"><h2 class="place__title">Vitacura</h2><p class="place__address">Av. Vitacura 2831, Las Condes.</p><span class="place__contact">Fono: (56 2) 2481-4971</span><span class="place__contact">Email: alcantara@superdelicious.cl</span></div><div class="places__item"><h2 class="place__title">World Trade Center</h2><p class="place__address"> Nueva Tajamar 48, Local 11, Las Condes.</p><span class="place__contact">Fono: (56 2) 2481-4971</span><span class="place__contact">Email: alcantara@superdelicious.cl</span></div></section></main><script>function initMap() {
+    // The location of Uluru
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {
+            zoom: 14,
+            center: {lat: -33.413855, lng: -70.593321},
+            });
+    // The marker, positioned at Uluru
+    setMarkers(map);
+    }
+var beaches = [
+    ['Alcantara', -33.414982, -70.589340, 4],
+    ['World Trade Center', -33.416218, -70.605502, 5],
+    ['Edificio Millenium', -33.410940, -70.602400, 3],
+    ['Boulevard Nueva Las Condes', -33.405036, -70.572885, 2],
+    ['Ciudad Empresarial', -33.393302, -70.614632, 2],
+    ['Vitacura', -33.414538, -70.603552, 2],
+    ['Isidora Goyenechea', -33.413855, -70.593321, 2],
+    ['La Concepción', -33.424678, -70.615178, 1]
+];
+function setMarkers(map) {
+    // Adds markers to the map.
+
+    // Marker sizes are expressed as a Size of X,Y where the origin of the image
+    // (0,0) is located in the top left of the image.
+
+    // Origins, anchor positions and coordinates of the marker increase in the X
+    // direction to the right and in the Y direction down.
+    var image = {
+        url: 'https://svgshare.com/i/AXW.svg',
+        // This marker is 20 pixels wide by 32 pixels high.
+        size: new google.maps.Size(40, 54),
+        // The origin for this image is (0, 0).
+        origin: new google.maps.Point(0, 0),
+        // The anchor for this image is the base of the flagpole at (0, 32).
+        anchor: new google.maps.Point(0, 32)
+    };
+    // Shapes define the clickable region of the icon. The type defines an HTML
+    // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+    // The final coordinate closes the poly by connecting to the first coordinate.
+    var shape = {
+        coords: [1, 1, 1, 20, 18, 20, 18, 1],
+        type: 'poly'
+    };
+    for (var i = 0; i < beaches.length; i++) {
+        var beach = beaches[i];
+        var marker = new google.maps.Marker({
+            position: {lat: beach[1], lng: beach[2]},
+            map: map,
+            icon: image,
+            shape: shape,
+            title: beach[0],
+            zIndex: beach[3]
+        });
+    }
+}
+</script><script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqO5JTcHz5o3oMLtU9S5yIX1JRriM7D6c&amp;callback=initMap"></script><script type="text/javascript" src="index.bundle.js"></script></body></html>
