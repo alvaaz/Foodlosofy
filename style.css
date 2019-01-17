@@ -172,19 +172,20 @@
     padding: 10px 0px;
     white-space: nowrap;
     flex: 0 0 25%; }
-  .container__listItem > div {
-    overflow: hidden;
-    cursor: pointer;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-decoration: none;
-    color: #FD4A41;
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 2px;
-    transition: .2s color ease-in-out; }
-    .container__listItem > div:hover {
-      color: #fff; }
+    .container__listItem > .item {
+      overflow: hidden;
+      padding: 0 !important;
+      cursor: pointer;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      text-decoration: none;
+      color: #FD4A41 !important;
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: 2px;
+      transition: .2s color ease-in-out; }
+      .container__listItem > .item:hover {
+        color: #fff !important; }
 
 /* End Single Section Menu */
 /* Start Multiple Section Menu */
@@ -209,7 +210,8 @@
     width: 100%;
     flex-direction: column; }
   .navbar--is-visible .menu {
-    top: 80px; }
+    top: 80px;
+    z-index: 1; }
   .navbar .menu li {
     position: relative;
     flex-direction: column;
