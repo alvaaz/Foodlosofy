@@ -247,6 +247,52 @@
 html {
   font-family: 'Raleway', sans-serif; }
 
+.main__food {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-auto-rows: 1fr;
+  font-family: 'Cera';
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  height: auto;
+  overflow: hidden; }
+  @media screen and (min-width: 1240px) {
+    .main__food {
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); } }
+  .main__food:before {
+    content: '';
+    width: 0;
+    padding-bottom: 100%;
+    grid-row: 1 / 1;
+    grid-column: 1 / 1; }
+  .main__food > *:first-child {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1; }
+  .main__food > a {
+    position: relative;
+    text-align: center; }
+    .main__food > a:hover img {
+      width: 105%;
+      height: 105%; }
+    .main__food > a:hover span {
+      background-color: rgba(0, 0, 0, 0.7); }
+  .main__food > a img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s all ease-in-out; }
+  .main__food > a span {
+    position: absolute;
+    color: white;
+    padding-top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: .2s all ease-in-out; }
+
 .main {
   display: grid;
   grid-gap: 0;
@@ -257,8 +303,7 @@ html {
   @media screen and (min-width: 768px) {
     .main {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(4, auto);
-      height: auto; } }
+      grid-template-rows: repeat(4, auto); } }
   @media screen and (min-width: 1024px) {
     .main {
       grid-template-columns: repeat(4, 1fr);
@@ -280,6 +325,28 @@ html {
     object-fit: cover;
     line-height: 0;
     display: block; }
+  .glide__title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    font-family: 'DearType', sans-serif;
+    text-shadow: 1px 1px black;
+    color: white;
+    font-size: 400%;
+    white-space: nowrap; }
+  .glide__entucasa {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3rem;
+    font-family: 'Sanchez', sans-serif;
+    text-shadow: 1px 1px black;
+    color: white;
+    font-size: 200%;
+    font-weight: 700;
+    white-space: nowrap;
+    text-transform: uppercase; }
 
 .blocks:first-child {
   grid-column: 1/2;
@@ -527,6 +594,10 @@ td, th {
   padding-top: 2rem;
   height: 32vh;
   overflow: scroll; }
+  .places .place__address {
+    margin-bottom: 1rem; }
+  .places .place__contact {
+    display: block; }
   @media screen and (min-width: 768px) {
     .places {
       overflow: visible;
